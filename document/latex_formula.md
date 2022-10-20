@@ -66,4 +66,4 @@ $$\overline{AB}=\overline{A}+\overline{B}$$
 ```
 输出为：
 $$\overline{AB}=\overline{A}+\overline{B}$$
-不难发现，
+不难发现，都是加一横，使用`\overline`会比`\bar`长一些，根据实际应用的不同，两者应严格区分。
