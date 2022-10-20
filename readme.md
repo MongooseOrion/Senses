@@ -15,7 +15,7 @@
   * [MATLAB 学习备忘录]()
 
 ## 外围必需技能的笔记
-  * [使用 Markdown 语法写作的学习备忘录]()
+  * [使用 Markdown 语法写作的学习备忘录](https://github.com/MongooseOrion/Senses/blob/main/document/markdown_notes.md)
   * [使用 Latex 格式在 Markdown 文档中插入公式]()
   * [探索在 Windows 系统上完成整个流程的开发工作]()
 
