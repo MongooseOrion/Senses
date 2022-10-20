@@ -2,8 +2,9 @@
 严格来说，从本科跨越到学术生活，我更多的是对来自未来不确定性挑战的恐惧。大家总是说幸运总是会不期而遇，一次随缘考研却成功了、一次随缘考六级却通过了的体验让我的 2022 年充满了幸运。我不知道未来会是怎样的，也不知道我能否保持幸运下去，唯一确定的事情是：唯有更多的实力傍身，才能更好地迎接来自未来的挑战。在此处将汇总我在研究生范围内的所有内容。
 ## 硬件描述语言和 FPGA 系统设计
   * [硬件描述语言 Veriog 学习备忘录](https://github.com/MongooseOrion/MyVerilogLearning)
+  * [基于 ARM 的最小系统设计和验证](https://github.com/MongooseOrion/SoC_Miniaturized_system_based_on_M3)
   * [基于 FPGA 的超声波测距系统设计](https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA)
-  * [基于 FPGA 的车牌识别系统设计](https://github.com/MongooseOrion/SoC_Miniaturized_system_based_on_M3)
+  * [基于 FPGA 的车牌识别系统设计](https://github.com/MongooseOrion/LPR-based-on-Cortex-M3-in-FPGA)
   
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
