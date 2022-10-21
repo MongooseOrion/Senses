@@ -7,7 +7,7 @@
 Latex 保留了加号`+`和减号`-`，但是乘号和除号就需要记专门的单词了：
   * 加：`+`
   * 减：`-`
-  * 乘；`\times`
+  * 乘（叉乘）；`\times`
   * 除：`\div`
 
 一个简单的二次函数写为 `$y=x+2$`，这是行内公式的写法。而行间公式应该写为：
@@ -67,3 +67,73 @@ $$\overline{AB}=\overline{A}+\overline{B}$$
 输出为：
 $$\overline{AB}=\overline{A}+\overline{B}$$
 不难发现，都是加一横，使用`\overline`会比`\bar`长一些，根据实际应用的不同，两者应严格区分。
+
+## 微积分学科
+首先使用 Latex 公式格式给出极限的**定义**：<br>
+`$\lim_{x \to \infty}{x_n=a} \Leftrightarrow \forall \varepsilon > 0$`，`$\exists$`正整数`$N$` ，当`$n>N$`时，有`$\left| x_n-a \right| < \varepsilon$`。<br><br>
+上述句子可被渲染为：<br>
+$\lim_{x \to \infty}{x_n=a} \Leftrightarrow \forall \varepsilon > 0$， $\exists$ 正整数 $N$ ，当 $n>N$ 时，有 $\left| x_n-a \right| < \varepsilon$ 。<br>
+
+### 偏微分
+偏微分方程常常会用 $u_{xy}$ 来表示算子，它的定义为：
+$$u_{xy}=\frac{\partial^{2} u}{\partial{y}\partial{x}}$$
+其中，偏微分符号由`$\partial{}$`给出。
+
+### 一重积分
+在看过教科书，掌握了一系列微积分的知识之后，下面开始计算积分内容：
+```
+$$\int_{\frac{1}{2}}^{\frac{3}{2}}{\frac{1}{\left| x-x^2 \right|}\\ dx}$$
+```
+渲染为：
+$$\int_{\frac{1}{2}}^{\frac{3}{2}}{\frac{1}{\sqrt{\left| x-x^2 \right|}}\\ dx}$$
+上式定义了一个 `$x \in [a,b]$` ( $x \in [a,b]$ ) 的广义积分，其中 \\int 表示积分符号，同时还可以看出当下标和上标都需要进行标注时，**一定是遵循先写下标，再写上标的顺序**。请注意，如果我们想要在待积分函数和 dx 之间加一个空格（当然这个必须要加），直接打空格是没有作用的——这个时候我们需要请出转义字符 “\” 。**通过`func\ dx`的命令可以在他们之间插入一个空格**，然而因为 markdown 语法又有一次转义，所以使用 markdown 时应自觉再加一个 “\”，这样就变成了`func\\ dx`。来看看不对空格处理是什么效果：
+$$\int_{\frac{1}{2}}^{\frac{3}{2}}{\frac{1}{\sqrt{\left| x-x^2 \right|}}dx}$$
+要是你这样写，不要让人知道你是大学生。
+
+另外，根号是通过`$\sqrt[n]{a}$`实现的，其中 *n* 表示开根阶数，*a* 表示待开根的常数或代数式，如果是二阶的，则无需写`[n]`。<br>
+
+下面来练习一下：
+```
+$$\int{\frac{arcsin\\ {\sqrt{x}}+ln\\ {x}}{\sqrt{x}}\\ dx}$$
+```
+$$\int{\frac{arcsin\\ {\sqrt{x}}+ln\\ {x}}{\sqrt{x}}\\ dx}$$
+
+### 多重积分
+直接打内容吧：
+```
+$$I = \iint_{D}{f(x,y)\\ d\sigma}$$
+```
+$$I=\iint\limits_{D}{f(x,y)\\ d\sigma}$$
+其中`$\iint$`就表示二重积分符号，不用想三重肯定是`$\iiint$`了，`$\limits_{}$`表示限定为此区域的积分，与积分上下限不同，不可混用。
+
+最后，还有一个曲线积分，表示为`$\oint_{}^{}$`。
+
+### 实战
+**麦克斯韦方程组**是一组描述**电场、磁场与电荷密度、电流密度**之间关系的偏微分方程。它由四个方程组成：描述电荷如何产生电场的**高斯定律**、论述磁单极子不存在的**高斯磁定律**、描述电流和时变电场怎样产生磁场的**安培定律**、描述时变磁场如何产生电场的**法拉第感应定律**。它可以这样表示：
+```
+// 微分形式
+$$\nabla \times \vec{E} = -\frac{\partial{\vec B}}{\partial t}$$
+$$\nabla \times \vec{H} = \vec{J}+\frac{\partial{\vec D}}{\partial t}$$
+$$\nabla \cdot \vec{D} = \rho$$
+$$\nabla \cdot \vec{B} = 0$$
+
+// 积分形式
+$$\oint{\vec{E} \cdot d\vec{l}}=-\int_{s}{-\frac{\partial{\vec{B}}}{\partial t}\cdot d\vec{s}}$$
+$$\oint{\vec{H} \cdot d\vec{l}}=\int_{s}{\vec{J}+\frac{\partial{\vec{D}}}{\partial t}\\ d\vec{s}}=I+\int{\frac{\partial{\vec{D}}}{\partial t}\cdot d\vec{s}}$$
+$$\int{\vec{D}\cdot d\vec{l}}=\rho \cdot s=Q$$
+$$\int{\vec{B}\cdot d\vec{s}}=0$$
+```
+渲染为：
+
+**// 微分形式**
+$$\nabla \times \vec{E} = -\frac{\partial{\vec B}}{\partial t}$$
+$$\nabla \times \vec{H} = \vec{J}+\frac{\partial{\vec D}}{\partial t}$$
+$$\nabla \cdot \vec{D} = \rho$$
+$$\nabla \cdot \vec{B} = 0$$
+**积分形式**
+$$\oint{\vec{E} \cdot d\vec{l}}=-\int_{s}{-\frac{\partial{\vec{B}}}{\partial t}\cdot d\vec{s}}$$
+$$\oint{\vec{H} \cdot d\vec{l}}=\int_{s}{\vec{J}+\frac{\partial{\vec{D}}}{\partial t}\\ d\vec{s}}=I+\int{\frac{\partial{\vec{D}}}{\partial t}\cdot d\vec{s}}$$
+$$\int{\vec{D}\cdot d\vec{l}}=\rho \cdot s=Q$$
+$$\int{\vec{B}\cdot d\vec{s}}=0$$
+
+其中，**矢量** $\vec{E}$ 可由`$\vec{E}$`表示，**点乘** $\cdot$ 可由`$\cdot$`表示，**劈形算符（哈密顿运算符、散度算符）** $\nabla$ 由`$\nabla$`给出。
