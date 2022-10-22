@@ -125,12 +125,12 @@ $$\int{\vec{B}\cdot d\vec{s}}=0$$
 ```
 渲染为：
 
-**// 微分形式**
+**微分形式：**
 $$\nabla \times \vec{E} = -\frac{\partial{\vec B}}{\partial t}$$
 $$\nabla \times \vec{H} = \vec{J}+\frac{\partial{\vec D}}{\partial t}$$
 $$\nabla \cdot \vec{D} = \rho$$
 $$\nabla \cdot \vec{B} = 0$$
-**积分形式**
+**积分形式：**
 $$\oint{\vec{E} \cdot d\vec{l}}=-\int_{s}{-\frac{\partial{\vec{B}}}{\partial t}\cdot d\vec{s}}$$
 $$\oint{\vec{H} \cdot d\vec{l}}=\int_{s}{\vec{J}+\frac{\partial{\vec{D}}}{\partial t}\\ d\vec{s}}=I+\int{\frac{\partial{\vec{D}}}{\partial t}\cdot d\vec{s}}$$
 $$\int{\vec{D}\cdot d\vec{l}}=\rho \cdot s=Q$$
