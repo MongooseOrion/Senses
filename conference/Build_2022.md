@@ -37,7 +37,7 @@ GitHub 面向企业用户和个人用户分别推出了几项功能，如下述�
 ### GitHub Codespaces 和 github.dev
 Codespaces 现在已经开放给 GitHub Teams 和 GitHub Enterprise Cloud 上的所有人使用，可以为团队快速获得即用即付的托管开发环境。如果满足资格的用户，可以在仓库的首页的 Code 按钮，看到提示。遗憾的是，此功能暂未对个人用户的仓库开放。
 
-对于个人用户，现在使用浏览器打开任意一个仓库，将链接中 github.com 的 com 替换为 dev，即可开启一个在线的 VSCode 编辑器，可以对工程代码进行查看和编辑。
+对于个人用户，现在使用浏览器打开任意一个仓库，将链接中 github.com 的 com 替换为 dev，即可开启一个在线的 **VSCode** 编辑器，可以对工程代码进行查看和编辑。另外也支持快捷键，在 GitHub 仓库页面点击键盘的 “。” 键，可以直接打开。
 
 ### GitHub Copilot
 
