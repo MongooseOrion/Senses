@@ -22,8 +22,6 @@
 
 ## 参会总结和感想
   * [微软 2022 年开发者大会：Microsoft Build 2022](https://github.com/MongooseOrion/Senses/blob/main/conference/Build_2022.md)
-  * [Microsoft Ignite 2022](https://github.com/MongooseOrion/Senses/blob/main/conference/microsoft_ignite_22.md)
-  * [三星电子 2022 年开发者大会：SDC 2022](https://github.com/MongooseOrion/Senses/blob/main/conference/SDC22.md)
 
 ## 一个工科生在人文社科上的探索
   * [从历史中走来的人权，绝不是藉由攻击的措辞]()
