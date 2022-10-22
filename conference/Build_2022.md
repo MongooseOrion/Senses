@@ -30,7 +30,7 @@ Windows 现已支持下列应用的本地 ARM 支持和原生应用开发：
   * .NET 和 .NET Framework
   * WSA
   * WSL
-  * [Windows 终端]()
+  * [Windows 终端](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-hk&gl=hk)
   * Git
   * Project Volterra，基于 ARM 的主机，可组成阵列用于深度学习项目的开发
 
@@ -86,10 +86,10 @@ Azure Container Apps 使你能够在无服务器平台上运行微服务和容�
   * 任何 [KEDA](https://keda.sh/docs/2.8/scalers/) 支持的缩放器
 
 ### 人工智能模型
-利用 Azure 强大的计算能力，训练了 Florence，其具备了突破性的视觉识别能力。而与 OpenAI 合作，推出了：
-  * GPT，一个类人类语言生成的模型
-  * DALL-E，一个对真实图像的生成与编辑的模型
-  * Codex，一个生成代码的模型
+利用 Azure 强大的计算能力，训练了 [Florence](https://www.microsoft.com/en-us/research/project/project-florence-vl/)，其具备了突破性的视觉识别能力。而与 OpenAI 合作，推出了：
+  * [GPT](https://learn.microsoft.com/zh-cn/azure/cognitive-services/openai/concepts/models#gpt-3-models)，一个类人类语言生成的模型
+  * [DALL-E](https://openai.com/blog/dall-e/)，一个对真实图像的生成与编辑的模型
+  * [Codex](https://learn.microsoft.com/zh-cn/azure/cognitive-services/openai/how-to/work-with-code)，一个生成代码的模型
 
 通过构建云原生应用程序，使用 AKS 可以用一种非常简单的手法加入这些模型，应用于客户端。
 
@@ -105,5 +105,5 @@ Azure Container Apps 使你能够在无服务器平台上运行微服务和容�
   9. 有关 Power Pages 的更多内容，可以[点此](https://learn.microsoft.com/zh-cn/power-pages/introduction)了解。
   10. 有关 AKS 的更多内容，可[点此](https://azure.microsoft.com/zh-cn/topic/what-is-kubernetes/#overview)了解。
   11. 有关 Azure Container Apps 的更多内容，可[点此](https://learn.microsoft.com/en-us/azure/container-apps/overview)了解。
-  12. 了解更多 Microsoft 训练的 AI 模型的案例，可[点此]()访问。
-  13. 
+  12. 了解更多 Microsoft 训练的 AI 模型的案例，可[点此](https://learn.microsoft.com/zh-cn/azure/cognitive-services/openai/overview)访问。
+
