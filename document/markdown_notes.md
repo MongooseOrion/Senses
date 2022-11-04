@@ -41,6 +41,15 @@ module anti(
 
 通过使用 “width=” 属性可以调整图片的大小，比例不会更改。如果想要两张图片并排放在一起，可以调整好宽度尺寸， markdown 渲染会自动并列放置。<br>
 
+同时，如果不使用 html 代码来调整格式，也可以这样：
+```
+![alt 文本](http://image-path.png)
+![alt 文本](http://image-path.png "图片 Title 值")
+![设置图片宽度高度](http://image-path.png =300x200)
+![设置图片宽度](http://image-path.png =300x)
+![设置图片高度](http://image-path.png =x200)
+```
+
 示例 (中间插入 3 个空格，加上它自己渲染 1 个，共 4 个空格)：<br><br>
 <img src="https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA/blob/main/v1.1/Picture/%E7%BB%98%E5%9B%BE5.png" width = '300' alt="图片alt" title="波形发生子模块程序设计框图" />&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA/blob/main/v1.1/Picture/%E7%BB%98%E5%9B%BE8.png" width = '327' alt="图片alt" title="高速计数子模块程序设计框图" /><br><br>
