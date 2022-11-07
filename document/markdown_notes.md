@@ -25,7 +25,7 @@ module anti(
 );
 ```
 
-在代码块的上下行打上三个 “ ``` ” 符号，可渲染围栏式代码块，**注意是制表键上面的那个打 “\`timescale” 的按键**，而不是单引号。
+在代码块的上下行打上三个 “ ``` ” 符号，可渲染围栏式代码块，**注意是制表键上面的那个打 “`timescale” 的按键**，而不是单引号。
 
 ## 加入行内高亮效果（行内引用）
 行内引用可以使用行内代码来实现，例如：**行内代码是使用 \`符号\` 来实现的**，中间的部分将渲染为下述的样子：<br><br>
@@ -40,7 +40,7 @@ module anti(
 \<img src="https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA/blob/main/v1.1/Picture/%E7%BB%98%E5%9B%BE5.png" width = '300' alt="图片alt" title="波形发生子模块程序设计框图" />（<- 如果两张图片之间想要插入空格，输入 **“ \&nbsp; ”**）<br>
 \<img src="https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA/blob/main/v1.1/Picture/%E7%BB%98%E5%9B%BE8.png" width = '327' alt="图片alt" title="高速计数子模块程序设计框图" /><br>
 
-通过使用 “width=” 属性可以调整图片的大小，比例不会更改。如果想要两张图片并排放在一起，可以调整好宽度尺寸， markdown 渲染会自动并列放置。<br>
+通过使用 `width=` 属性可以调整图片的大小，比例不会更改。如果想要两张图片并排放在一起，可以调整好宽度尺寸， markdown 渲染会自动并列放置。<br>
 
 同时，如果不使用 html 代码来调整格式，也可以这样：
 ```
@@ -80,6 +80,16 @@ module anti(
 或：
   1. 第一点
   1. 第二点
+
+另外，如果需要加入上标和下标，以实现注解的效果，可以使用 HTML 的语法，如下述所示：
+```ruby
+// HTML 语法
+<sup>[1,19]</sup>   // 上标
+<sub>2</sub>        // 下标
+```
+将渲染为：<br>
+例子：<sup>[1,19]</sup> <br>
+例子：<sub>2</sub> <br>
 
 ## 注意空格和缩进
 根据我的实际体验来讲，Markdown 的语法对空格的要求是比较混乱的。一方面，有些内容渲染必需空格或必须不加空格；另一方面，有些部分则有或者没有空格区别不大。这就导致我有时候写一些很简单的内容就会出一些匪夷所思的问题。
