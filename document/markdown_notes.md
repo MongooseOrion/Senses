@@ -37,12 +37,20 @@ module anti(
 这里借用我在项目 [基于 FPGA 的超声波测距雷达](https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA/) 中的图片。<br><br>
 通过插入 HTML 标签可以实现对图片的高级设置：<br>
 
-\<img src="https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA/blob/main/v1.1/Picture/%E7%BB%98%E5%9B%BE5.png" width = '300' alt="图片alt" title="波形发生子模块程序设计框图" />（<- 如果两张图片之间想要插入空格，输入 **“ \&nbsp; ”**）<br>
-\<img src="https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA/blob/main/v1.1/Picture/%E7%BB%98%E5%9B%BE8.png" width = '327' alt="图片alt" title="高速计数子模块程序设计框图" /><br>
+```
+<img src="https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA/blob/main/v1.1/Picture/%E7%BB%98%E5%9B%BE5.png" width = '300' alt="图片alt" title="波形发生子模块程序设计框图" />（<- 如果两张图片之间想要插入空格，输入 “ \&nbsp; ”）
+<img src="https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA/blob/main/v1.1/Picture/%E7%BB%98%E5%9B%BE8.png" width = '327' alt="图片alt" title="高速计数子模块程序设计框图" />
+```
 
-通过使用 “width=” 属性可以调整图片的大小，比例不会更改。如果想要两张图片并排放在一起，可以调整好宽度尺寸， markdown 渲染会自动并列放置。<br>
+通过使用 `width=` 属性可以调整图片的宽度，使用 `height=` 可以调整图片的高度，比例不会更改。`alt=` 后面的内容将会在不能加载图片时显示，配置该属性将对纯文本浏览器友好。如果想要两张图片并排放在一起，可以调整好宽度尺寸， markdown 渲染会自动并列放置。
 
-同时，如果不使用 html 代码来调整格式，也可以这样：
+大多数时候，我们希望指定图片的对齐方式，例如居左或者居中，使用 HTML 代码可以比较方便地完成这些工作：
+```
+<div align="center"><img src="" width="" height="" alt="" title="" /></div>
+```
+其中，`div align=` 就是指定图片对齐方式的属性，如果有多张图片需要在一行内对齐，可将它们都囊括在 `<div></div>` 标签之间。
+
+<br>同时，如果不使用 html 代码来调整格式，markdown 也提供了语法，但是不能完成更为复杂的，例如对齐方式或者 css 操作。
 ```
 ![alt 文本](http://image-path.png)
 ![alt 文本](http://image-path.png "图片 Title 值")
