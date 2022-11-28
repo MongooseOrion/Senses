@@ -157,6 +157,7 @@ $$V_i(s) \Leftrightarrow v_i(s),\\ V_1(s) \Leftrightarrow -v_1(s),\\ V_2(s) \Lef
 $$V_3(s) \Leftrightarrow v_3(s),\\ V_4(s) \Leftrightarrow i_4(s),\\ V_5(s) \Leftrightarrow -v_5(s)$$
 
 各元器件的值由下式确定：
+
 $$\begin{cases}
   & G_{1i}=\frac{1}{r_s}  & G_{12}=1  & C_{11}=c_1  & G_{11}=\frac{1}{r_s}\\
   & G_{21}=1  & G_{23}=1  & C_{22}=l_2  & G_{32}=1\\
@@ -200,6 +201,7 @@ $$H(s)=\frac{k \prod_{i=1}^{m}(s^2+a_i)}{b_0+b_1s+b_2s^2+b_3s^3+...+b_{n-1}s^{n-
 其中，电阻 $r_s$ 与输入电压源 $v_i(s)$ 变为并联形式，即输入电流源 $\frac{v_i(s)}{r_s}$ 与电阻 $r_s$ 并联。
 
 再将各受控电压源与串联电容等效为**受控电流源与并联电容**，这样可以将电容数量减少。
+
 $$\begin{cases}
   c_1^{'}=c_1+c_2 \\
   c_3^{'}=c_2+c_3+c_4 \\
@@ -245,6 +247,7 @@ $$V_i(s) \Leftrightarrow v_i(s),\\ V_1(s) \Leftrightarrow -v_1(s),\\ V_2(s) \Lef
 $$V_3(s) \Leftrightarrow v_3(s),\\ V_4(s) \Leftrightarrow i_4(s),\\ V_5(s) \Leftrightarrow -v_5(s)$$
 
 变换得到的有源 RC 滤波器各元器件值为：
+
 $$\begin{cases}
 G_{1i}=\frac{1}{r_s} & G_{12}=1 & C_{11}=c_1^{'} & G_{11}=\frac{1}{r_s} \\
 G_{21}=1 & G_{23}=1 & C_{22}=l_2 & G_{32}=1 \\
