@@ -11,14 +11,15 @@
   
 ## 利用开源框架的数字信号处理应用实例
   * [滤波器的设计（前序）](https://github.com/MongooseOrion/Senses/blob/main/document/LPF_RC.md)
+  * [使用逻辑实现快速傅里叶变换算法](https://github.com/MongooseOrion/fft_net)
 
 ## 基于行业软件的编程或联调
-  * [MATLAB 学习备忘录]()
+  * [MATLAB 学习备忘录](https://github.com/MongooseOrion/Senses/blob/main/document/matlab_func.md)
 
 ## 外围必需技能的笔记
   * [使用 Markdown 语法写作的学习备忘录](https://github.com/MongooseOrion/Senses/blob/main/document/markdown_notes.md)
   * [使用 Latex 格式在 Markdown 文档中插入公式](https://github.com/MongooseOrion/Senses/blob/main/document/latex_formula.md)
-  * [探索在 Windows 系统上完成整个流程的开发工作]()
+  * [探索在 Windows 系统上完成整个流程的硬件开发工作（包含国产 FPGA）](https://github.com/MongooseOrion/Senses/blob/main/document/Windows_dev.md)
 
 ## 参会总结和感想
   * [微软 2022 年开发者大会：Microsoft Build 2022](https://github.com/MongooseOrion/Senses/blob/main/conference/Build_2022.md)
