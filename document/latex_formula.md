@@ -47,12 +47,12 @@ $$y=x+2$$
   * 饱和区： $V_{DS} > V_{GS}-V_{TH}$
 
 ## 带有上下标和分式的复杂公式
-上标使用 “ ^ ”表示，下标使用下划线 “ _ ” 表示，x 的平方 $x^{2}$ 和漏电流 $I_{D}$ 分别这样键入：
+上标使用` ^ `表示，下标使用下划线` _ `表示，x 的平方 $x^{2}$ 和漏电流 $I_{D}$ 分别这样键入：
 ```
 $$x^{2}$$
 $$I_{D}$$
 ```
-Latex 中大括号作为分隔符使用，用来产生当前元素和下一元素的边界，不加大括号写栅源电压就变成了这个样子 $V_GS$，而我们要的应该是这样： $V_{GS}$ 。
+Latex 中**大括号作为分隔符使用**，用来产生当前元素和下一元素的边界，不加大括号写栅源电压就变成了这个样子 $V_GS$，而我们要的应该是这样： $V_{GS}$ 。
 
 分数使用`$\frac{}{}$`来键入，其中前一个大括号填入**分子**，后一个大括号内填入**分母**。例如如果想要键入一个反比例函数 $y=\frac{1}{x}$：
 ```
@@ -72,7 +72,7 @@ $$I_{D}=\mu_{n}C_{ox}\frac{W}{L}[(V_{GS}-V_{TH})V_{DS}-\frac{1}{2}V_{DS}^{2}]$$
 ```
 $$\left\\{ 89 \right \\}$$
 ```
-而中括号和小括号在容易产生歧义的地方也可以加上`$\left[ content \right]$`，但不是必需的。
+当某一内容的高度比标准的文本符号`[]`还要高的时候（例如括上分式或者积分），需要这样键入：`$\left[ content \right]$`。
 
 ## 希腊字母
 希腊字母如果会读，就没事了，否则只能硬着记，这都怪我的数学老师。我能遇到的希腊字母大致就下面这些了：
@@ -96,13 +96,37 @@ $$H(s)=\frac{v_o(s)}{v_i(s)} \tag{1.1}$$
 $$H(j\omega)=\frac{\dot{Y}}{\dot{X}}$$
 其中，响应相量由`$\dot{Y}$`键入，激励向量由`$\dot{X}$`键入。
 
-布尔运算可能用到反函数，一个简单的二端与非化或非运算由这样表示：
+布尔运算可能用到**反函数**，一个简单的二端与非化或非运算由这样表示：
 ```
 $$\overline{AB}=\overline{A}+\overline{B}$$
 ```
 输出为：
 $$\overline{AB}=\overline{A}+\overline{B}$$
 不难发现，都是加一横，使用`\overline`会比`\bar`长一些，根据实际应用的不同，两者应严格区分。
+
+<br>有些时候，我们需要**连等**来表示某一公式的推导过程，可以使用`{align*}`环境来实现，下面是一个例子：
+```
+$$\begin{align*}
+  f_T(t) &= \frac{a_0}{2}+\sum_{n=1}^{\infty}a_n \frac{e^{jn\omega_0 t}+e^{-jn\omega_0 t}}{2}+\sum_{n=1}^{\infty}b_n\frac{e^{jn\omega_0 t}-e^{-jn\omega_0 t}}{2j} \\
+  &= \frac{a_0}{2}+\sum_{n=1}^{\infty}\frac{a_n-jb_n}{2}e^{jn\omega_0 t}+\sum_{n=1}^{\infty}\frac{a_n+jb_n}{2}e^{-jn\omega_0 t} \\
+  &= \frac{a_0}{2}+\sum_{n=1}^{\infty}F_n e^{jn\omega_0 t}+\sum_{n=1}^{\infty}F_{-n} e^{-jn\omega_0 t} \\
+  &= F_0+\sum_{n=1}^{\infty}F_n e^{jn\omega_0 t}+\sum_{n=-\infty}^{-1}F_n e^{jn\omega_0 t} \\
+  &= \sum_{n=-\infty}^{\infty}F_n e^{jn\omega_0 t}
+\end{align*}$$
+```
+上式表示连续周期函数的傅里叶级数，利用三角型傅里叶系数和欧拉公式导出指数型傅里叶级数，它将渲染为：
+
+$$\begin{align*}
+  f_T(t) &= \frac{a_0}{2}+\sum_{n=1}^{\infty}a_n \frac{e^{jn\omega_0 t}+e^{-jn\omega_0 t}}{2}+\sum_{n=1}^{\infty}b_n\frac{e^{jn\omega_0 t}-e^{-jn\omega_0 t}}{2j} \\
+  &= \frac{a_0}{2}+\sum_{n=1}^{\infty}\frac{a_n-jb_n}{2}e^{jn\omega_0 t}+\sum_{n=1}^{\infty}\frac{a_n+jb_n}{2}e^{-jn\omega_0 t} \\
+  &= \frac{a_0}{2}+\sum_{n=1}^{\infty}F_n e^{jn\omega_0 t}+\sum_{n=1}^{\infty}F_{-n} e^{-jn\omega_0 t} \\
+  &= F_0+\sum_{n=1}^{\infty}F_n e^{jn\omega_0 t}+\sum_{n=-\infty}^{-1}F_n e^{jn\omega_0 t} \\
+  &= \sum_{n=-\infty}^{\infty}F_n e^{jn\omega_0 t}
+\end{align*}$$
+
+可以发现，关键是符号` &= `，使用这个符号的等号将自动对齐。当然，如果某一行我只想要等号，而不需要对齐，也可以直接使用`=`，这是允许的。
+
+必须注意的是，使用`\begin...\end`环境时，**在公式上部和下部应各空一行**，否则 GitHub 将无法渲染。
 
 ## 微积分学科
 首先使用 Latex 公式格式给出极限的**定义**：<br>
@@ -113,7 +137,14 @@ $\lim_{x \to \infty}{x_n=a} \Leftrightarrow \forall \varepsilon > 0$， $\exists
 ### 偏微分
 偏微分方程常常会用 $u_{xy}$ 来表示算子，它的定义为：
 $$u_{xy}=\frac{\partial^{2} u}{\partial{y}\partial{x}}$$
-其中，偏微分符号由`$\partial{}$`给出。
+其中，**偏微分符号**由`$\partial{}$`给出。
+
+<br>如果**多元函数求导时限定某一变量的值**，应当键入`\left . \right |`，例如规定函数 $z(x,y)$ 对变量 $y$ 求导，并使变量 $x=0$ ，应当这样：
+```
+\left . \frac{\partial z(x,y)}{\partial y} \right |_{x=0}
+```
+将被渲染为：
+$$\left . \frac{\partial z(x,y)}{\partial y} \right |_{x=0}$$
 
 ### 一重积分
 在看过教科书，掌握了一系列微积分的知识之后，下面开始计算积分内容：
@@ -140,36 +171,105 @@ $$\int{\frac{arcsin\\ {\sqrt{x}}+ln\\ {x}}{\sqrt{x}}\\ dx}$$
 $$I = \iint_{D}{f(x,y)\\ d\sigma}$$
 ```
 $$I=\iint\limits_{D}{f(x,y)\\ d\sigma}$$
-其中`$\iint$`就表示二重积分符号，不用想三重肯定是`$\iiint$`了，`$\limits_{}$`表示限定为此区域的积分，与积分上下限不同，不可混用。
+其中`$\iint$`就表示**二重积分符号**，不用想**三重积分**肯定是`$\iiint$`了，`$\limits_{}$`表示**限定为此区域的积分**，与积分上下限不同，不可混用。
 
-最后，还有一个曲线积分，表示为`$\oint_{}^{}$`。
+最后，还有一个**曲线积分**，表示为`$\oint_{}^{}$`。
+
+## 线性代数
+表示**矩阵**时，应当使用`{bmatrix}`环境；表示**行列式**时，应当使用`{vmatrix}`环境。
+
+例如键入一个三阶单位矩阵：
+```
+\begin{bmatrix}
+  1 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 1
+\end{bmatrix}
+```
+它将被渲染为：
+
+$$\begin{bmatrix}
+  1 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 1
+\end{bmatrix}$$
+
+其中，符号` \\ `表示换行；` & `表示空 4 格，是一个分隔符。
+
+这个矩阵的行列式，将`{bmatrix}`替换为`{vmatrix}`即可：
+```
+\begin{vmatrix}
+  1 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 1
+\end{vmatrix}
+```
+渲染为：
+
+$$\begin{vmatrix}
+  1 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 1
+\end{vmatrix}$$
+
+### 线性方程组
+线性方程组可以使用`{cases}`环境来实现，一个三元方程组可以这样键入：
+```
+$$\begin{cases}
+a_{11}x_1+a_{12}x_2+a_{13}x_3=b_1 \\
+a_{21}x_1+a_{22}x_2+a_{23}x_3=b_2 \\
+a_{31}x_1+a_{32}x_3+a_{33}x_3=b_3
+\end{cases}$$
+```
+它将渲染为：
+
+$$\begin{cases}
+a_{11}x_1+a_{12}x_2+a_{13}x_3=b_1 \\
+a_{21}x_1+a_{22}x_2+a_{23}x_3=b_2 \\
+a_{31}x_1+a_{32}x_3+a_{33}x_3=b_3
+\end{cases}$$
+
+`{cases}`环境实际上表示**条件等式**环境，这就意味着，**只要是需要大括号的场景，都可以使用这个环境**。
 
 ## 实战
 **麦克斯韦方程组**是一组描述**电场、磁场与电荷密度、电流密度**之间关系的偏微分方程。它由四个方程组成：描述电荷如何产生电场的**高斯定律**、论述磁单极子不存在的**高斯磁定律**、描述电流和时变电场怎样产生磁场的**安培定律**、描述时变磁场如何产生电场的**法拉第感应定律**。它可以这样表示：
 ```
 // 微分形式
-$$\nabla \times \vec{E} = -\frac{\partial{\vec B}}{\partial t}$$
-$$\nabla \times \vec{H} = \vec{J}+\frac{\partial{\vec D}}{\partial t}$$
-$$\nabla \cdot \vec{D} = \rho$$
-$$\nabla \cdot \vec{B} = 0$$
+// 使用条件等式 {cases} 环境
+$$\begin{cases}
+\nabla \times \vec{E} = -\frac{\partial{\vec B}}{\partial t} \\
+\nabla \times \vec{H} = \vec{J}+\frac{\partial{\vec D}}{\partial t} \\
+\nabla \cdot \vec{D} = \rho \\
+\nabla \cdot \vec{B} = 0
+\end{cases}$$
 
 // 积分形式
-$$\oint{\vec{E} \cdot d\vec{l}}=-\int_{s}{-\frac{\partial{\vec{B}}}{\partial t}\cdot d\vec{s}}$$
-$$\oint{\vec{H} \cdot d\vec{l}}=\int_{s}{\vec{J}+\frac{\partial{\vec{D}}}{\partial t}\\ d\vec{s}}=I+\int{\frac{\partial{\vec{D}}}{\partial t}\cdot d\vec{s}}$$
-$$\int{\vec{D}\cdot d\vec{l}}=\rho \cdot s=Q$$
-$$\int{\vec{B}\cdot d\vec{s}}=0$$
+// 使用多行对齐等式 {align*} 环境，以第一个等号对齐
+$$\begin{align*}
+\oint{\vec{E} \cdot d\vec{l}} &= -\int_{s}{-\frac{\partial{\vec{B}}}{\partial t}\cdot d\vec{s}} \\
+\oint{\vec{H} \cdot d\vec{l}} &= \int_{s}{\vec{J}+\frac{\partial{\vec{D}}}{\partial t}\ d\vec{s}}=I+\int{\frac{\partial{\vec{D}}}{\partial t}\cdot d\vec{s}} \\
+\int{\vec{D}\cdot d\vec{l}} &= \rho \cdot s=Q \\
+\int{\vec{B}\cdot d\vec{s}} &= 0
+\end{align*}$$
 ```
 渲染为：
 
 **微分形式：**
-$$\nabla \times \vec{E} = -\frac{\partial{\vec B}}{\partial t}$$
-$$\nabla \times \vec{H} = \vec{J}+\frac{\partial{\vec D}}{\partial t}$$
-$$\nabla \cdot \vec{D} = \rho$$
-$$\nabla \cdot \vec{B} = 0$$
+
+$$\begin{cases}
+\nabla \times \vec{E} = -\frac{\partial{\vec B}}{\partial t} \\
+\nabla \times \vec{H} = \vec{J}+\frac{\partial{\vec D}}{\partial t} \\
+\nabla \cdot \vec{D} = \rho \\
+\nabla \cdot \vec{B} = 0
+\end{cases}$$
+
 **积分形式：**
-$$\oint{\vec{E} \cdot d\vec{l}}=-\int_{s}{-\frac{\partial{\vec{B}}}{\partial t}\cdot d\vec{s}}$$
-$$\oint{\vec{H} \cdot d\vec{l}}=\int_{s}{\vec{J}+\frac{\partial{\vec{D}}}{\partial t}\\ d\vec{s}}=I+\int{\frac{\partial{\vec{D}}}{\partial t}\cdot d\vec{s}}$$
-$$\int{\vec{D}\cdot d\vec{l}}=\rho \cdot s=Q$$
-$$\int{\vec{B}\cdot d\vec{s}}=0$$
+
+$$\begin{align*}
+\oint{\vec{E} \cdot d\vec{l}} &= -\int_{s}{-\frac{\partial{\vec{B}}}{\partial t}\cdot d\vec{s}} \\
+\oint{\vec{H} \cdot d\vec{l}} &= \int_{s}{\vec{J}+\frac{\partial{\vec{D}}}{\partial t}\ d\vec{s}}=I+\int{\frac{\partial{\vec{D}}}{\partial t}\cdot d\vec{s}} \\
+\int{\vec{D}\cdot d\vec{l}} &= \rho \cdot s=Q \\
+\int{\vec{B}\cdot d\vec{s}} &= 0
+\end{align*}$$
 
 其中，**矢量** $\vec{E}$ 可由`$\vec{E}$`表示，**点乘** $\cdot$ 可由`$\cdot$`表示，**劈形算符（哈密顿运算符、散度算符）** $\nabla$ 由`$\nabla$`给出。
