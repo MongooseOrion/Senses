@@ -6,4 +6,4 @@
 ## 议题
   * 使用 Windows 本地运行 Linux 负载
   * 使用 Windows 调试 Android 应用程序
-  * 
+  * 配置紫光展锐 FPGA 开发环境
