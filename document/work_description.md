@@ -46,4 +46,4 @@ RISC-V 处理器架构比 ARM Cortex-M3 更加灵活和可定制化，因此在构建定制化的处理器和
   2. SSD-MobileNet
 
 ### 神经网络部署
-TensorFlow Lite 和 Paddle-Lite 均可部署在
+Paddle-Lite 和 TensorFlow Lite 都提供了基于 RISC-V 架构的 CPU 版本，能够在 RISC-V 平台上进行深度学习推理任务。两者都提供了丰富的 API 和示例，以帮助用户快速集成和部署深度学习模型。由于 RISC-V 平台的计算性能和内存容量等限制，可能需要针对具体的应用场景进行模型剪枝和量化等优化措施，以获得更好的性能和效果。因此，选择Paddle-Lite还是TensorFlow Lite主要取决于具体需求和应用场景，以及各自的优势和特点。例如，Paddle-Lite 在端侧部署方面具有较高的灵活性和定制化能力，而 TensorFlow Lite 在移动端部署方面具有较高的成熟度和广泛的应用场景。
