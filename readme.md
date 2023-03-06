@@ -23,6 +23,7 @@
 
 ## 参会总结和感想
   * [微软 2022 年开发者大会：Microsoft Build 2022](https://github.com/MongooseOrion/Senses/blob/main/conference/Build_2022.md)
+  * [北京邮电大学关于 ChatGPT 的一些讨论](https://github.com/MongooseOrion/Senses/blob/main/conference/ChatGPT_BUPT.md)
 
 ## 一个工科生在人文社科上的探索
   * [一个时代的记忆 | 几年沉浮，世界终究不属于 Windows phone · 以刷了 Win10 的小米 4 为例](https://www.coolapk.com/feed/16097298?shareKey=YTkwODMyNTM3MTRiNjM1NTFkNDU~&shareUid=777487&shareFrom=com.coolapk.market_9.1.1)
