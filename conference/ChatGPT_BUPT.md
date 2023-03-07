@@ -11,7 +11,7 @@
   * ChatGPT 简介
   * 自然语言处理学科简介
   * GPT 模型发展过程简介
-  * GPT3.5 带来的一些革新
+  * GPT3.5 的特殊能力
 
 ## ChatGPT 简介
 
@@ -79,7 +79,7 @@ GPT 模型是一个基于 Transformer 架构的神经网络模型，具有多层
 
 此模型采用 12 层 Transformer 解码器的堆叠，是**面向任务的头结构**。
 
-<div align='center'><img src='../Picture/cn/屏幕截图 2023-03-05 180939.png' alt='GPT Transformer 解码器结构图' title='面向任务的头结构[1]' /></div>
+<div align='center'><img src='../Picture/cn/屏幕截图 2023-03-05 180939.png' alt='GPT Transformer 解码器结构图' title='面向任务的头结构[1]' height='250'/></div>
 
 ### GPT-2
 
@@ -112,7 +112,7 @@ GPT-2 的训练数据由 web 自由获取变为了获取 Reddit 上的高赞文�
   * 预训练阶段：加入更多数据，在更大规模数据上进行[基于慢的外环梯度下降训练](https://learn.microsoft.com/zh-cn/training/modules/introduction-to-classical-machine-learning/6-gradient-descent)，模型参数规模从 **15 亿到 175 亿**，数据规模从 **40GB 到 500GB**；
   * 微调阶段：在 1 个或几个样例上进行 [In-context Learning](https://zhuanlan.zhihu.com/p/484999828)，以激活目标 context 推断，这种模型训练方法允许模型在运行时动态地从输入文本中学习并调整模型参数，与有监督模型微调不同，**In-context Learning 不需要大量标注数据和预训练模型，可以在无监督的情况西训练模型**。
 
-<div align='center'><img src='..\Picture\cn\图片2.png' alt='In-context Learning' title='In-context Learning[4]' /></div>
+<div align='center'><img src='..\Picture\cn\图片2.png' alt='In-context Learning' title='In-context Learning[4]' height='300'/></div>
 
 显然，GPT-3 从 Zero-Shot 转变为了 few-shot 的 in-context learning，下图展示了**不同规模下的 context 数据量、样例数量与准确性的关系**。
 
@@ -120,7 +120,7 @@ GPT-2 的训练数据由 web 自由获取变为了获取 Reddit 上的高赞文�
 
 与监督学习的模型比较，Few-shot 的性能超过 fine-tuned BERT，但是比有监督训练的 SOTA 差距仍然比较大。
 
-<div align='center'><img src='..\Picture\cn\屏幕截图 2023-03-06 170330.png' alt='在 SuperGLUE 数据集上的实验性能比较' title='在 SuperGLUE 数据集上的实验性能比较[4]' /></div>
+<div align='center'><img src='..\Picture\cn\屏幕截图 2023-03-06 170330.png' alt='在 SuperGLUE 数据集上的实验性能比较' title='在 SuperGLUE 数据集上的实验性能比较[4]' height='300' /></div>
 
 ### GPT3.5
 
@@ -141,19 +141,84 @@ GPT-2 的训练数据由 web 自由获取变为了获取 Reddit 上的高赞文�
 
 <div align='center'><img src='..\Picture\cn\屏幕截图 2023-03-06 191850.png' alt='Prompt 数据库组成的三个不同的数据集用于三个不同阶段' title='Prompt 数据库组成的三个不同的数据集[5]' /></div>
 
-## GPT3.5 的革新
+### ChatGPT
+
+ChatGPT 基本采用 GPT3.5 中所积累的技术，属于 GPT3.5 模型的分支。
+
+与 GPT3.5 不同的地方在于，ChatGPT 对对话格式进行了针对式的训练。这种**在大规模数据上预训练使得模型产生很强的语言生产能力**以及**在少量精心标注的数据下反复交互微调控制模型**的方式，使得 ChatGPT 有很强的对话能力。
+
+ChatGPT 有效综合运用了迄今为止的各种 NLP 技术，例如早些时候的词向量化、N-gram 语言模型、Transformer 解码器等以及近年来的 IFT（Instruction FineTuning，由 Google 提出）、RLHF（由 Google/Anthropic 提出）。
+
+## 构建 GPT 模型的一些先进技术
 
 ### 任务泛化能力
 
-Instruction FineTuning（IFT）带来了较强的任务泛化能力。利用多个不同任务的训练任务进行 IFT 可以大幅提升在未见任务上的 Zero-shot 性能。
+IFT 带来了较强的任务泛化能力。利用多个不同任务的训练任务进行 IFT 可以大幅提升在未见任务上的 Zero-shot 性能。
 
-<div align='center'><img src='..\Picture\cn\图片3.png' alt='GPT3.5 在未见任务上有出色的 Zero-shot 性能' title='GPT3.5 在未见任务上的 Zero-shot 性能[6]' height='170' /></div>
+<div align='center'><img src='..\Picture\cn\屏幕截图 2023-03-07 142410.png' alt='GPT3.5 在未见任务上有出色的 Zero-shot 性能' title='GPT3.5 在未见任务上的 Zero-shot 性能[6]' height='170' /></div>
 
 下图是定量分析任务泛化能力
 
 <div align='center'><img src='..\Picture\cn\屏幕截图 2023-03-06 193306.png' alt='' title='定量分析任务泛化能力[6]' height='170' /></div>
 
 ### 对模型行为进行基于人类反馈的约束
+
+RL 是复杂行为学习的有效方法，但是简单定义的奖励函数难以满足人类偏好。因此，可以引入**人类反馈信息**来获得人类偏好的奖励函数。
+
+<div align='center'><img src='..\Picture\cn\屏幕截图 2023-03-07 140038.png' alt='引入人类反馈信息来获得人类偏好的奖励函数' title='引入人类反馈信息来获得人类偏好的奖励函数[7]' height='170' /></div>
+
+利用这一方法设计的模型，在 Atari 游戏上取得了更好的性能，并能够学习新的复杂行为。
+
+下述图片表明了 RLHF 对 HHH 中的 Helpful 和 Harmless 的帮助。
+
+<div align='center'><img src='..\Picture\cn\屏幕截图 2023-03-07 140815.png' alt='RLHF 对 Helpful 和 Harmless 的帮助非常大，但[8]并未涉及对 Honest 的考察' title='RLHF 对 Helpful 和 Harmless 的帮助[8]' height='270' /></div>
+
+## 总结
+
+### 第一个方面
+ChatGPT 目前仍存在各类问题与挑战（例如假消息和滥用情况），或者说是 LLM 行业仍然面临着各种挑战，这需要从技术和伦理多方面来进行应对。同时研发类似技术时，更应在基础阶段就进行深入的调研和研究，从“源头”来研究。
+
+2021 年 5 月，CSET 发布了一个报告，其利用 GPT-3 模型生成 6 个虚假信息相关的任务，结果如下：
+
+<div align='center'><img src='..\Picture\cn\屏幕截图 2023-03-07 143913.png' alt='CSET 利用 GPT-3 模型生成 6 个虚假信息相关的任务' title='CSET 利用 GPT-3 模型生成 6 个虚假信息相关的任务[9]' height='' /></div><br>
+
+可能生成虚假信息是目前的技术内在局限性导致的：
+  * ChatGPT 预训练时是用大规模网络语言文本作为数据，这里面可能含有事实正确的语言，但也可能含有错误的、虚假的、想象的、编撰的各种内容的语言；
+  * ChatGPT预训练时关注的是语言特性，目前典型的训练任务是**基于前面几个词预测后面一个词，而不会关注这些语言内容是错误的、虚构的**，因此，它并没有得到这方面能力的训练；
+  * ChatGPT微调时（包括后面对齐时）主要关注如何让模型有用和安全地响应人类指令，并没有将内容的真假作为一项广泛的需求放在里面。
+
+可以尝试从以下两个方面解决：
+  * 从训练材料上入手：真的和假的信息都进行标注，然后进行训练；
+  * 更新学习模型和技术：判别学习/回报学习/奖惩学习/价值观学习。
+
+### 第二个方面
+
+从 ChatGPT 来看，大模型方面还有很多可以深入研究的内容：
+
+#### 大模型核心单元的研究
+  * 除了 FNN-CNN/RNN-Transformer，还有什么更有效的基础构件？
+  * 对数学性质的研究和神经网络混沌的研究
+
+#### 大模型体系结构的研究
+
+  * 组合元件和组合方式的基础理论和实践指南
+  * 单元交互方法、集成运算方法的理论模型
+
+#### 大模型训练方法研究
+  * 已有方法的收敛性质、收敛效率的理论保证
+  * 新的训练方法探索：Forward-Forward 算法（FF）、实时交互的方法
+
+#### 大规模高质量数据构建研究
+  * 语言数据质量的定量评估指标与评估方法
+
+### 第三个方面
+在 ChatGPT 发布的第二天，2022 年 12 月 1 日，在 NeurIPS2022 年会上，图灵奖得主 Geoffrey E. Hinton 发表主题演讲《The Forward-Forward Algorithm for Training Deep Neural Networks》，提出 FF 算法。
+
+目前在几乎所有神经网络模型中都使用误差反向传播技术（Backpropagation，BP）进行学习，但是神经科学表明：人脑中可能并不存在误差反向传播的情况。而 FF 只进行两次前向过程，避免 BP 中的反向传播。前向网络可能更合理地接近现实生活中在大脑中发生的情况
+。同时，没有反向微小信号的传播需求，就降低了对运算精度的要求，降低计算能耗。
+
+
+<br> **最后，不可否认的是，ChatGPT 是人工智能领域理论方法、技术实施和工程落地应用的典范，是一个里程碑式的进展，影响范围涉及社会经济文化各个领域。而构建 ChatGPT 类应用带来了一系列需要应对的技术与伦理挑战，这意味着对 ChatGPT 的研究不仅要针对 ChatGPT 本身，还要追溯其源头。同时，人工智能研究不应局限在 ChatGPT 类方法这一条路线上。**
 
 
 
@@ -163,6 +228,8 @@ Instruction FineTuning（IFT）带来了较强的任务泛化能力。利用多�
   3. [Kaplan2020]Jared Kaplan, et al. Scaling Laws for Neural Language Models. arXiv, 2020.
   4. Tom B. Brown,et al.Language Models are Few-Shot Learners. 2020NIPS.
   5. Long Ouyang, et al. Training language models to follow instructions with human feedback. arXiv2203.02155v1. 2022. 
-  6. [WeiJ2022ICLRJason Wei, et al. FINETUNED LANGUAGE MODELSARE ZERO-SHOT LEARNERS. ICLR2022.
-
+  6. [WeiJ2022ICLR]Jason Wei, et al. FINETUNED LANGUAGE MODELSARE ZERO-SHOT LEARNERS. ICLR2022.
+  7. [Christiano2017NIPS]Paul Christiano, et al. Deep reinforcement learning from human preferences. NIPS2017.
+  8. [Yuntao Bai2022] Yuntao Bai, et al. Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback. arXiv2204.05862v1, 2022.
+  9. Center for Security and Emerging Technology, Truth, Lies, and Automation, How Language Model Could Change Disinformation. 2021, May. 
 
