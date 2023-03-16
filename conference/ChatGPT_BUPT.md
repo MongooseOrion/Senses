@@ -149,6 +149,10 @@ ChatGPT 基本采用 GPT3.5 中所积累的技术，属于 GPT3.5 模型的分�
 
 ChatGPT 有效综合运用了迄今为止的各种 NLP 技术，例如早些时候的词向量化、N-gram 语言模型、Transformer 解码器等以及近年来的 IFT（Instruction FineTuning，由 Google 提出）、RLHF（由 Google/Anthropic 提出）。
 
+### GPT-4
+*该模型在北京时间 2023 年 3 月 15 日凌晨发布，未在该会议上被提到。*
+
+
 ## 构建 GPT 模型的一些先进技术
 
 ### 任务泛化能力
@@ -169,7 +173,7 @@ RL 是复杂行为学习的有效方法，但是简单定义的奖励函数难�
 
 利用这一方法设计的模型，在 Atari 游戏上取得了更好的性能，并能够学习新的复杂行为。
 
-下述图片表明了 RLHF 对 HHH 中的 Helpful 和 Harmless 的帮助。
+下述图片表明了 RLHF 对 HHH 中的有帮助性（Helpful）和无害性（Harmless）的帮助。
 
 <div align='center'><img src='..\Picture\cn\屏幕截图 2023-03-07 140815.png' alt='RLHF 对 Helpful 和 Harmless 的帮助非常大，但[8]并未涉及对 Honest 的考察' title='RLHF 对 Helpful 和 Harmless 的帮助[8]' height='270' /></div>
 

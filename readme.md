@@ -19,7 +19,7 @@
 ## 外围必需技能的笔记
   * [使用 Markdown 语法写作的学习备忘录](https://github.com/MongooseOrion/Senses/blob/main/document/markdown_notes.md)
   * [使用 Latex 格式在 Markdown 文档中插入公式](https://github.com/MongooseOrion/Senses/blob/main/document/latex_formula.md)
-  * [探索在 Windows 系统上完成整个流程的硬件开发工作（包含国产 FPGA）](https://github.com/MongooseOrion/Senses/blob/main/document/Windows_dev.md)
+  * [在 Windows 上部署 Linux 子系统和 TensorFlow-GPU](https://github.com/MongooseOrion/Senses/blob/main/document/Windows_dev.md)
 
 ## 参会总结和感想
   * [微软 2022 年开发者大会：Microsoft Build 2022](https://github.com/MongooseOrion/Senses/blob/main/conference/Build_2022.md)
