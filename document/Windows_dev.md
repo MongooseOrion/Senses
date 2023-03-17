@@ -123,6 +123,9 @@ define_attribute {p:led[7]} {PAP_IO_SLEW} {SLOW}
 ```
 c
 ```
+除此之外，PDS 也提供了 GUI 的管脚约束功能，你可以通过点击 `Tools - Physical Constraint Editor` 打开该功能。在二级菜单中点击 `I/O table` 以对系统所有的输入和输出接口进行约束，在选择对应的管脚编号后，其会自动生成管脚电压、驱动等内容。
+
+**请注意，在约束前你需要确定所采用的芯片部件编号，并仔细对照接口的管脚编号是否正确。**
 
 ## 在 Windows 配置 TensorFlow-GPU 版本
 
