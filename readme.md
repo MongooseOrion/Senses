@@ -7,7 +7,7 @@
   
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
-  * [人工智能项目实例](https://github.com/MongooseOrion/DeepLearning_cases)
+  * [人工智能项目实例](https://github.com/MongooseOrion/Senses/blob/main/document/deep_learning.md)
   
 ## 利用开源框架的数字信号处理应用实例
   * [滤波器的设计（前序）](https://github.com/MongooseOrion/Senses/blob/main/document/LPF_RC.md)
