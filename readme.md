@@ -8,6 +8,7 @@
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
   * [人工智能项目实例](https://github.com/MongooseOrion/Senses/blob/main/document/deep_learning.md)
+  * [在 Tensorflow 上进行目标识别（已适配 2.7 版本）](https://github.com/MongooseOrion/tf2-keras-yolo3)
   
 ## 利用开源框架的数字信号处理应用实例
   * [滤波器的设计（前序）](https://github.com/MongooseOrion/Senses/blob/main/document/LPF_RC.md)

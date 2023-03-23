@@ -19,7 +19,7 @@
 
 在 Micorsoft store 中可以直接安装 Python，相比于自定义安装，这样做的好处在于 Visual Studio 可以直接识别 Python 环境而无需额外配置，并可以方便地移除。
 
-要构建 Python 之前，请确认源代码或开发工具依赖的 Python 版本，Python3.9 可点击[此处](ms-windows-store://pdp/?ProductId=9p7qfqmjrfp7&referrer=bingwebsearch&ocid=bingwebsearch)安装。
+要构建 Python 之前，请确认源代码或开发工具依赖的 Python 版本，Python3.9 可点击[此处](https://apps.microsoft.com/store/detail/python-39/9P7QFQMJRFP7?hl=en-us&gl=us)安装。
 
 如果未自定义安装目录，你可以在 `C:\Users\ [user] \AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts` 路径中找到使用 `pip install` 命令安装的第三方模块。
 
