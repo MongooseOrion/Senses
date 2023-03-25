@@ -119,11 +119,8 @@ define_attribute {p:led[7]} {PAP_IO_DRIVE} {8}
 define_attribute {p:led[7]} {PAP_IO_NONE} {TRUE}
 define_attribute {p:led[7]} {PAP_IO_SLEW} {SLOW}
 ```
-你还可以使用 TCL 语言约束管脚，其语法如下：
-```
-c
-```
-除此之外，PDS 也提供了 GUI 的管脚约束功能，你可以通过点击 `Tools - Physical Constraint Editor` 打开该功能。在二级菜单中点击 `I/O table` 以对系统所有的输入和输出接口进行约束，在选择对应的管脚编号后，其会自动生成管脚电压、驱动等内容。
+
+除此之外，PDS 也提供了 GUI 的管脚约束功能，你可以通过点击 `Tools - User Constraint Editer - Pre Synthesize UCE` 打开该功能。在左边二级菜单中点击 `I/O table` 以对系统所有的输入和输出接口进行约束，在选择对应的管脚编号后，其会自动生成管脚电压、驱动等内容。完成编辑后，点击保存按钮，将自动生成 `.fdc` 文件。
 
 **请注意，在约束前你需要确定所采用的芯片部件编号，并仔细对照接口的管脚编号是否正确。**
 
