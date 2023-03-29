@@ -21,7 +21,7 @@
 
 Òª¹¹½¨ Python Ö®Ç°£¬ÇëÈ·ÈÏÔ´´úÂë»ò¿ª·¢¹¤¾ßÒÀÀµµÄ Python °æ±¾£¬Python3.9 ¿Éµã»÷[´Ë´¦](https://apps.microsoft.com/store/detail/python-39/9P7QFQMJRFP7?hl=en-us&gl=us)°²×°¡£
 
-Èç¹ûÎ´×Ô¶¨Òå°²×°Ä¿Â¼£¬Äã¿ÉÒÔÔÚ `C:\Users\ [user] \AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts` Â·¾¶ÖĞÕÒµ½Ê¹ÓÃ `pip install` ÃüÁî°²×°µÄµÚÈı·½Ä£¿é¡£
+Èç¹ûÎ´×Ô¶¨Òå°²×°Ä¿Â¼£¬Äã¿ÉÒÔÔÚ `C:\Users\ [username] \AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts` Â·¾¶ÖĞÕÒµ½Ê¹ÓÃ `pip install` ÃüÁî°²×°µÄµÚÈı·½Ä£¿é¡£
 
 <br>Çë½«¸ÃÂ·¾¶¼ÓÈë `Path` »·¾³±äÁ¿ÖĞ£¬ÒÔ±ãÖ±½Ó´Ó Windows ÖÕ¶ËÖĞ½øÈë Python »·¾³¡£
 
@@ -74,7 +74,9 @@ WSA ¿ÉÒÔÖ±½ÓÔËĞĞ»ùÓÚ ARM64 ºÍ x86 ¿ª·¢µÄ Android Ó¦ÓÃ³ÌĞò£¬ÒÔÏÂ¹¦ÄÜ»ñµÃÍêÈ«Ö§³Ö£
   2. ¾ß±¸×Ï¹â FPGA Ó²¼ş¿ª·¢Æ½Ì¨¡£
 
 ### ·ÂÕæºÍ±àÒë
-ÈôÒªÊ¹ÓÃ ModelSim À´½øĞĞÉè¼ÆÎÄ¼şµÄÑéÖ¤£¬ÄãĞèÒªÔÚ `Project - Project Settings - Simulation - Target Simulator` ÖĞÑ¡Ôñ `ModelSim Simulator`¡£Í¬Ê±Äã¿ÉÒÔ½« `Compiled Libarary Location` ÉèÖÃÔÚ Modelsim Ó¦ÓÃ³ÌĞò°²×°¸ùÄ¿Â¼ÏÂ£¬ÒÔ±ã²é¿´¡£×îºó£¬ÄãĞèÒªÉèÖÃ `Simulator Executable Path` ÔÚ Modelsim Ö÷³ÌĞòµÄ¸¸ÎÄ¼ş¼ĞÂ·¾¶ÏÂ£¬Èç¹ûÊÇÄ¬ÈÏÉèÖÃ£¬ËüÓ¦¸ÃÊÇ `C:\altera\13.1\modelsim_ase\win32aloem`¡£
+ÈôÒªÊ¹ÓÃ ModelSim À´½øĞĞÉè¼ÆÎÄ¼şµÄÑéÖ¤£¬ÄãĞèÒªÔÚ `Project - Project Settings - Simulation - Target Simulator` ÖĞÑ¡Ôñ `ModelSim Simulator`¡£
+
+Äã¿ÉÒÔ½« `Compiled Libarary Location` ÉèÖÃÔÚ Modelsim Ó¦ÓÃ³ÌĞò°²×°¸ùÄ¿Â¼ÏÂ£¬ÒÔ±ã ModelSim ¿É¿¿µØ±àÒë PDS Ïà¹ØÆ÷¼şºÍ²é¿´¡£È»ºó£¬ÄãĞèÒªÉèÖÃ `Simulator Executable Path` ÔÚ Modelsim Ö÷³ÌĞòµÄ¸¸ÎÄ¼ş¼ĞÂ·¾¶ÏÂ£¬Èç¹ûÊÇÄ¬ÈÏÉèÖÃ£¬ËüÓ¦¸ÃÊÇ `C:\altera\13.1\modelsim_ase\win32aloem`¡£
 
 Èç¹ûÉèÖÃÕıÈ·£¬ÄãÓ¦¸Ã¿ÉÒÔÔÚ±àĞ´¼¤ÀøÎÄ¼şºóÔËĞĞĞĞÎª¼¶·ÂÕæÊ±ÄÜ¹»¿´µ½ Modelsim ×Ô¶¯´ò¿ª²¢½øĞĞ²¨ĞÎ·ÂÕæ¡£
 
@@ -91,6 +93,23 @@ WSA ¿ÉÒÔÖ±½ÓÔËĞĞ»ùÓÚ ARM64 ºÍ x86 ¿ª·¢µÄ Android Ó¦ÓÃ³ÌĞò£¬ÒÔÏÂ¹¦ÄÜ»ñµÃÍêÈ«Ö§³Ö£
 ÈôÒªÊ¹ÓÃÔ­ÀíÍ¼¹¦ÄÜ£¬ÄãĞèÒªÈ·ÈÏÍ¨¹ı²¨ĞÎ·ÂÕæºÍ±àÒë¡£µã»÷ `Tools - Schematic Viwer` ¼´¿É²é¿´¡£
 
 ### ×ÛºÏ
+
+ÔÚ´Ë²½ÖèÏÂ£¬ĞèÒª½øĞĞÓ²¼ş¹Ü½ÅÔ¼Êø£¬ÒÔ±ã PDS È·ÈÏ Verilog ÖĞ°üº¬µÄ¶Ë¿ÚÓëÓ²¼ş¶ÔÓ¦¡£Äã¿ÉÒÔÖ±½Ó±àĞ´¹Ü½ÅÔ¼ÊøÎÄ¼ş `.fdc`£¬Æä¸ñÊ½ÈçÏÂ£º
+```ruby
+define_attribute {p:led[7]} {PAP_IO_DIRECTION} {OUTPUT}
+define_attribute {p:led[7]} {PAP_IO_LOC} {F8}
+define_attribute {p:led[7]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:led[7]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:led[7]} {PAP_IO_DRIVE} {8}
+define_attribute {p:led[7]} {PAP_IO_NONE} {TRUE}
+define_attribute {p:led[7]} {PAP_IO_SLEW} {SLOW}
+```
+
+³ı´ËÖ®Íâ£¬PDS Ò²Ìá¹©ÁË GUI µÄ¹Ü½ÅÔ¼Êø¹¦ÄÜ£¬Äã¿ÉÒÔÍ¨¹ıµã»÷ `Tools - User Constraint Editer - Pre Synthesize UCE` ´ò¿ª¸Ã¹¦ÄÜ¡£µã»÷ `device` Ñ¡Ïî£¬È»ºóÔÚ×ó±ß¶ş¼¶²Ëµ¥ÖĞµã»÷ `I/O table` ÒÔ¶ÔÏµÍ³ËùÓĞµÄÊäÈëºÍÊä³ö½Ó¿Ú½øĞĞÔ¼Êø£¬ÔÚÑ¡Ôñ¶ÔÓ¦µÄ¹Ü½Å±àºÅºó£¬Æä»á×Ô¶¯Éú³É¹Ü½ÅµçÑ¹¡¢Çı¶¯µÈÄÚÈİ¡£Íê³É±à¼­ºó£¬µã»÷±£´æ°´Å¥£¬½«×Ô¶¯Éú³É `.fdc` ÎÄ¼ş¡£
+
+**Çë×¢Òâ£¬ÔÚÔ¼ÊøÇ°ÄãĞèÒªÈ·¶¨Ëù²ÉÓÃµÄĞ¾Æ¬²¿¼ş±àºÅ£¬²¢×ĞÏ¸¶ÔÕÕ½Ó¿ÚµÄ¹Ü½Å±àºÅÊÇ·ñÕıÈ·¡£**
+
+#### ÌáÊ¾
 
 Çë×¢Òâ£¬PDS ²»ÔÊĞíÉè¼Æ´úÂëÖĞµÄ `always` ¿éÒıÈëÒì²½¸´Î»µ«²»Ê¹ÓÃµÄÇé¿ö£¬ÀıÈç£º
 ```ruby
@@ -109,20 +128,26 @@ end
 
 ### ²¼¾Ö²¼Ïß
 
-ÔÚ´Ë²½ÖèÏÂ£¬ĞèÒª½øĞĞÓ²¼ş¹Ü½ÅÔ¼Êø£¬ÒÔ±ã PDS È·ÈÏ Verilog ÖĞ°üº¬µÄ¶Ë¿ÚÓëÓ²¼ş¶ÔÓ¦¡£Äã¿ÉÒÔÖ±½Ó±àĞ´¹Ü½ÅÔ¼ÊøÎÄ¼ş `.fdc`£¬Æä¸ñÊ½ÈçÏÂ£º
-```ruby
-define_attribute {p:led[7]} {PAP_IO_DIRECTION} {OUTPUT}
-define_attribute {p:led[7]} {PAP_IO_LOC} {F8}
-define_attribute {p:led[7]} {PAP_IO_VCCIO} {3.3}
-define_attribute {p:led[7]} {PAP_IO_STANDARD} {LVCMOS33}
-define_attribute {p:led[7]} {PAP_IO_DRIVE} {8}
-define_attribute {p:led[7]} {PAP_IO_NONE} {TRUE}
-define_attribute {p:led[7]} {PAP_IO_SLEW} {SLOW}
+ÔÚ´Ë²½ÖèÏÂ£¬ÄãÓ¦¸Ã´¦ÀíÊ±ÖÓÔ¼ÊøÎÊÌâ¡£
+
+#### ºöÂÔµ¥¸öÒı½ÅµÄÊ±ĞòÔ¼ÊøÎÊÌâ
+
+Ä³Ğ©Ê±ÖÓĞÅºÅÓÉÓÚÒ»Ğ©Ô­Òò£¬Ã»ÓĞ±»°²ÅÅµ½ FPGA Æ÷¼şµÄÊ±ÖÓ×¨ÓÃÒı½ÅÉÏ£¬Õâ¾Í»áµ¼ÖÂ´¥·¢´íÎó¡£
+
+´íÎóÄÚÈİÎª£º
+```
+Place-0084: GLOBAL_CLOCK: the driver [port] fixed at [position] is unreasonable. Sub-optimal placement for a clock source and a clock buffer.
 ```
 
-³ı´ËÖ®Íâ£¬PDS Ò²Ìá¹©ÁË GUI µÄ¹Ü½ÅÔ¼Êø¹¦ÄÜ£¬Äã¿ÉÒÔÍ¨¹ıµã»÷ `Tools - User Constraint Editer - Pre Synthesize UCE` ´ò¿ª¸Ã¹¦ÄÜ¡£ÔÚ×ó±ß¶ş¼¶²Ëµ¥ÖĞµã»÷ `I/O table` ÒÔ¶ÔÏµÍ³ËùÓĞµÄÊäÈëºÍÊä³ö½Ó¿Ú½øĞĞÔ¼Êø£¬ÔÚÑ¡Ôñ¶ÔÓ¦µÄ¹Ü½Å±àºÅºó£¬Æä»á×Ô¶¯Éú³É¹Ü½ÅµçÑ¹¡¢Çı¶¯µÈÄÚÈİ¡£Íê³É±à¼­ºó£¬µã»÷±£´æ°´Å¥£¬½«×Ô¶¯Éú³É `.fdc` ÎÄ¼ş¡£
+½â¾ö·½·¨ÊÇ£ºÔÚ `Pre Synthesize UCE` ¹¦ÄÜÖĞÑ¡Ôñ `Attributes` Ñ¡Ïî£¬È»ºóÔÚÆäÖĞÌí¼ÓÏà¹ØÊä³öÍøÂç£¨Nets£©Ãû³Æ£¬²¢Ñ¡Ôñ `PAP_CLOCK_DEDICATED_ROUTE` µÄÖµÎª `FALSE`¡£
 
-**Çë×¢Òâ£¬ÔÚÔ¼ÊøÇ°ÄãĞèÒªÈ·¶¨Ëù²ÉÓÃµÄĞ¾Æ¬²¿¼ş±àºÅ£¬²¢×ĞÏ¸¶ÔÕÕ½Ó¿ÚµÄ¹Ü½Å±àºÅÊÇ·ñÕıÈ·¡£**
+### ÏÂÔØÖÁ¿ª·¢°å
+
+ÔÚÉú³É±ÈÌØÁ÷ÎÄ¼şºó£¬µã»÷ `Tools - Configuration` ´ò¿ªÉè±¸¹ÜÀí¹¦ÄÜ¡£
+
+Èç¹û°å×ÓÓëµçÄÔÁ¬½ÓÕıÈ·£¬ÄãÓ¦¸Ã¿ÉÒÔÔÚµã»÷ `File - Connect To Server` ºó£¬ÔÚ `Device Properties` ´°¸ñÖĞ¿´µ½ÄãµÄÉè±¸ĞÅÏ¢¡£
+
+Èç¹ûÄãµÄ°å×Ó²»Ö§³Ö SPI Flash£¬ÇëÑ¡Ôñ `Boundary Scan` ²¢ÔÚÓÒ²à´°¿ÚÖĞÓÒ¼üÑ¡Ôñ `Add Pango Device` ÒÔÌí¼Ó±ÈÌØÁ÷ÎÄ¼ş¡£È»ºóÄã½«¿ÉÒÔ `Program Device`¡£
 
 ## ÔÚ Windows ÅäÖÃ TensorFlow-GPU °æ±¾
 
@@ -131,7 +156,9 @@ define_attribute {p:led[7]} {PAP_IO_SLEW} {SLOW}
   1. Windows °æ±¾£ºWindows10 1909 »òÒÔÉÏ£»
   2. Nvidia GPU ¼æÈİĞÔ¼ì²éÇë²ÎÔÄ[Ö§³Ö Cuda µÄ GPU ĞÍºÅ](https://developer.nvidia.com/cuda-gpus)£»
   3. Cuda Ö§³ÖÓë cuDNN Ö§³ÖÇë²ÎÔÄ [TensorFlow ¾­¹ı²âÊÔµÄ¼æÈİ°æ±¾](https://tensorflow.google.cn/install/source?hl=zh-cn#gpu)£»
-  4. È·±£ Nvidia GPU Çı¶¯³ÌĞò´¦ÓÚ×îĞÂ°æ±¾£¬ÈçĞè±£Ö¤Çı¶¯³ÌĞòÊ¼ÖÕÎª×îĞÂ£¬¿É²ÎÔÄ [NVIDIA Geforce experience](https://www.nvidia.cn/geforce/geforce-experience/)¡£
+  4. È·±£ Nvidia GPU Çı¶¯³ÌĞò´¦ÓÚ×îĞÂ°æ±¾£¬ÈçĞè±£Ö¤Çı¶¯³ÌĞòÊ¼ÖÕÎª×îĞÂ£¬¿É²ÎÔÄ [NVIDIA Geforce Experience](https://www.nvidia.cn/geforce/geforce-experience/)¡£
+
+Çë×¢Òâ£¬¸ù¾İ Tensorflow Ö§³ÖÍøÕ¾¸ø³öµÄĞÅÏ¢£¬TensorFlow-GPU °æ±¾ 2.11 ÒÑ¾­²»Ö§³ÖÔ­Éú Windows µÄ GPU ÔËĞĞ¡£Èç¹ûÄãĞèÒªÔÚ Windows ±¾µØÔËĞĞ GPU °æ±¾µÄ TensorFlow£¬ÄÇÃ´Ö»ÄÜÑ¡Ôñ TensorFlow-GPU °æ±¾ 2.10¡£Èç¹ûÄã±ØĞëÔÚ Windows Ê¹ÓÃ 2.11 »ò¸ü¸ß°æ±¾µÄ TensorFlow-GPU£¬Çë¿¼ÂÇ WSL2 »ò²ÎÔÄ[ÔÚ Windows »·¾³ÖĞ´ÓÔ´´úÂë¹¹½¨](https://tensorflow.google.cn/install/source_windows?hl=zh-cn)¡£
 
 ### °²×° Cuda ¼ÆËãºËĞÄÇı¶¯ºÍ cuDNN ÒÀÀµ¿â
 
@@ -176,7 +203,10 @@ conda create -n tensorflow python=3.9
 ```
 ÆäÖĞ£¬`tensorflow` ÎªÓÃ»§Ö¸¶¨µÄĞéÄâ»·¾³Ãû³Æ¡£**Çë×¢Òâ**£¬´ËÃüÃû²»´ú±íÖ¸¶¨¸ÃĞéÄâ»·¾³Îª TensorFlow ÒÀÀµ»·¾³¡£`python=3.9` ´ú±íÖ¸¶¨¸ÃĞéÄâ»·¾³Îª Python3.9 °æ±¾£¬Çë×¢Òâ£¬´Ë´¦µÄ Python Ö»ÔÚ´ËĞéÄâ»·¾³ÖĞÎ¨Ò»ÉúĞ§¡£
 
-#### ÔÚÉÏÊöĞéÄâ»·¾³ÖĞ²¿Êğ TensorFlow-GPU
+### ÔÚÉÏÊöĞéÄâ»·¾³ÖĞ²¿Êğ TensorFlow-GPU
+
+#### Ê¹ÓÃÀëÏß°²×°
+
 ÔÚĞéÄâ»·¾³ÖĞ°²×° TensorFlow-GPU °æ±¾£¬ÇëÊ×ÏÈ²ÎÔÄ[¸ù¾İ Python °æ±¾Ö¸¶¨ whl µÄÍøÖ·](https://tensorflow.google.cn/install/pip?hl=zh-cn#package-location)£¬²¢ÏÂÔØÖ¸¶¨°æ±¾µÄ `whl` ÒÀÀµÎÄ¼ş¡£
 
 Èç¹ûÎ´×Ô¶¨ÒåÉèÖÃ°²×°Ä¿Â¼£¬ÄãÓ¦¸Ã¿ÉÒÔÔÚ `C:\Users\ [users] \Downloads` ÖĞÕÒµ½¶ÔÓ¦µÄ `whl` ÎÄ¼ş¡£
@@ -192,7 +222,13 @@ activate tensorflow
 pip install C:\Users\ [users] \Downloads\tensorflow_gpu-2.6.0-cp39-cp39-manylinux2010_x86_64.whl
 ```
 
-#### ÑéÖ¤ TensorFlow-GPU ÊÇ·ñ°²×°³É¹¦
+#### Ê¹ÓÃÔÚÏß°²×°
+
+Äã¿ÉÒÔÊ¹ÓÃ `pip install tensorflow-gpu=[version]` Ö¸ÁîÔÚÏß°²×°Ö¸¶¨°æ±¾µÄ TensorFlow-GPU¡£
+
+Çë×¢Òâ£¬ÏÂÔØ¿ÉÄÜÓÉÓÚÍøÂçÎÊÌâÖĞ¶Ï£¬Äã¿ÉÒÔ¸ü»» Anaconda µÄÏÂÔØÔ´À´È·±£ÕıÈ·°²×°¡£
+
+### ÑéÖ¤ TensorFlow-GPU ÊÇ·ñ°²×°³É¹¦
 
 ÔÚĞéÄâ»·¾³ÖĞ½øÈë Python »·¾³£¬²¢ÊäÈëÏÂÊöÃüÁî£º
 ```

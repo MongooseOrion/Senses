@@ -8,7 +8,7 @@
   * [基于 FPGA 的超声波测距系统设计](https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA)
   * [基于 FPGA 的车牌识别系统设计](https://github.com/MongooseOrion/LPR-based-on-Cortex-M3-in-FPGA)
   * [在紫光 FPGA 环境下开发和部署无剑 100 开源](https://github.com/MongooseOrion/wujian100_open)
-  * [利用无剑 100 执行基于 TensorFlow Lite 的目标识别]()
+  * [利用开源 RISC-V 执行基于 TensorFlow Lite 的目标识别]()
   
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
