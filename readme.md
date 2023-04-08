@@ -13,7 +13,7 @@
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
   * [人工智能项目实例](https://github.com/MongooseOrion/Senses/blob/main/document/deep_learning.md)
-  * [在 Tensorflow2.7 上使用 keras 进行目标识别](https://github.com/MongooseOrion/tf2-keras-yolo3)
+  * [将 yolov3 模型参数适配为 TensorFlow-GPU 2.7 运行](https://github.com/MongooseOrion/tf2-keras-yolo3)
   
 ## 利用开源框架的数字信号处理应用实例
   * [滤波器的设计（前序）](https://github.com/MongooseOrion/Senses/blob/main/document/LPF_RC.md)

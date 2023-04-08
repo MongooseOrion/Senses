@@ -82,9 +82,9 @@ WSA ¿ÉÒÔÖ±½ÓÔËÐÐ»ùÓÚ ARM64 ºÍ x86 ¿ª·¢µÄ Android Ó¦ÓÃ³ÌÐò£¬ÒÔÏÂ¹¦ÄÜ»ñµÃÍêÈ«Ö§³Ö£
 
 ### Ìí¼Ó IP ÎÄ¼þ
 
-Èç¹ûÊÇÔ¤ÖÃµÄ IP ºË£¬Äã¿ÉÒÔÔÚ `Tools - IP Compiler` ÖÐ»ñÈ¡ËùÐèµÄÄ£¿é£¬ÀýÈçÊ±ÖÓ·ÖÆµÆ÷ºÍÂß¼­·ÖÎöÒÇ¡£
+Èç¹ûÊÇÔ¤ÖÃµÄ IP ºË£¬Äã¿ÉÒÔÖ±½ÓÔÚ×ó²àµÄ `source` ´°¸ñÖÐ»ñÈ¡ËùÐèµÄÄ£¿é£¬ÀýÈçÊ±ÖÓ·ÖÆµÆ÷ºÍÂß¼­·ÖÎöÒÇ¡£
 
-Èç¹ûÊÇµÚÈý·½ IP ºË£¬Äã¿ÉÒÔÔÚ `Design` ´°¸ñÄÚÌí¼Ó¡£
+Èç¹ûÊÇµÚÈý·½ IP ºË£¬ÄãÊ×ÏÈÐèÒª°²×°Ëü¡£ÇëÔÚÉÏ²¿´ò¿ª `Tools - IP Compiler`£¬È»ºóÔÚ IP Compiler µÄÉÏ²¿´ò¿ª `Files - update` ¹¦ÄÜ£¬µã»÷ `Add packedge` ºóÌí¼Ó IP ºËËùÔÚµÄÂ·¾¶¡£ÄãÐèÒªÈ·±£ËüÊÇÒ»¸ö `iar` ÎÄ¼þ¡£
 
 ### ´ò¿ªÔ­ÀíÍ¼
 
