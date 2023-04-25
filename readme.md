@@ -26,6 +26,7 @@
   * [使用 Markdown 语法写作的学习备忘录](https://github.com/MongooseOrion/Senses/blob/main/document/markdown_notes.md)
   * [使用 Latex 格式在 Markdown 文档中插入公式](https://github.com/MongooseOrion/Senses/blob/main/document/latex_formula.md)
   * [在 Windows 上部署 Linux 子系统、紫光 PDS 工具和 TensorFlow-GPU](https://github.com/MongooseOrion/Senses/blob/main/document/Windows_dev.md)
+  * [单片机开发与汇编语言](https://github.com/MongooseOrion/Senses/blob/main/document/assembly_language.md)
 
 ## 参会总结和感想
   * [微软 2022 年开发者大会：Microsoft Build 2022](https://github.com/MongooseOrion/Senses/blob/main/conference/Build_2022.md)
