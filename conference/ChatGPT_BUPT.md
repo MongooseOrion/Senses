@@ -30,6 +30,7 @@ ChatGPT 是一个可交互的生成式预训练语言模型，其发展阶段经
   * GPT-2（2019年）：基础结构微调，强调无监督语言模型学习，训练数据、模型规模扩大；
   * GPT-3（2020年）：基础结构未变，探索零样本学习，进一步扩大训练数据和模型规模；
   * GPT3.5（2022年）：也称 InstructGPT，在 GPT-3 的基础上进行了大量基于人类反馈学习的探索，ChatGPT 是该模型的分支，增强了对话格式的训练；
+  * GPT-4（2023年）：OpenAI团队在2023年3月发布的最新GPT模型。其是一个大规模、多模态的模型，可以接受图像和文本输入，并生成文本输出。
 
 
 ChatGPT 的更多内容可[点此](chat.openai.com)访问。
@@ -152,6 +153,14 @@ ChatGPT 有效综合运用了迄今为止的各种 NLP 技术，例如早些时�
 ### GPT-4
 *该模型在北京时间 2023 年 3 月 15 日凌晨发布，未在该会议上被提到。*
 
+虽然 GPT04 在许多实际场景中比人类能力差，但 GPT-4 在各种专业和学术基准测试中表现出了与人类水平相当的水平，例如模拟的律师资格考试，得分在所有考生中位居前 10%。
+
+<div align='center'><img src='../Picture/cn/图片3.png' alt='' title='在各类模拟专业技能考试中GPT-4的成绩[10]' height='250' /></div>
+
+OpenAI 团队为 GPT-4 构建一个可预测扩展的深度学习堆栈，这在之前的GPT版本中是没有的。对于 GPT-4 这样的大型模型训练，进行特定的调优是不可行的。为了解决这个问题，其开发了跨多个尺度具有可预测行为的基础设施和优化方法。这些改进使得 OpenAI 团队能够从较小的模型中可靠地预测 GPT-4 某些方面的性能，这些较小的模型使计算量减少了1000 倍到 10000 倍。
+
+<div align='center'><img src='../Picture/cn/图片4.png' alt='' title='GPT-4在评估数据集中Few-shot的成绩[10]' height='' width='' /></div>
+
 
 ## 构建 GPT 模型的一些先进技术
 
@@ -236,4 +245,5 @@ ChatGPT 目前仍存在各类问题与挑战（例如假消息和滥用情况）
   7. [Christiano2017NIPS]Paul Christiano, et al. Deep reinforcement learning from human preferences. NIPS2017.
   8. [Yuntao Bai2022] Yuntao Bai, et al. Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback. arXiv2204.05862v1, 2022.
   9. Center for Security and Emerging Technology, Truth, Lies, and Automation, How Language Model Could Change Disinformation. 2021, May. 
+  10. OpenAI. GPT-4 Technical Report. 2023. 
 

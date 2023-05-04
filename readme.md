@@ -8,7 +8,7 @@
   * [基于 FPGA 的超声波测距系统设计](https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA)
   * [基于 FPGA 的车牌识别系统设计](https://github.com/MongooseOrion/LPR-based-on-Cortex-M3-in-FPGA)
   * [在紫光 FPGA 环境下移植开源项目]()
-  * [利用开源 RISC-V 执行基于 TensorFlow Lite 的目标识别]()
+  * [利用开源 RISC-V 执行基于 TensorFlow Lite 的目标识别](https://github.com/MongooseOrion/FPGA-Image-Recognition)
   
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
@@ -25,8 +25,8 @@
 ## 外围必需技能的笔记
   * [使用 Markdown 语法写作的学习备忘录](https://github.com/MongooseOrion/Senses/blob/main/document/markdown_notes.md)
   * [使用 Latex 格式在 Markdown 文档中插入公式](https://github.com/MongooseOrion/Senses/blob/main/document/latex_formula.md)
-  * [在 Windows 上部署 Linux 子系统、紫光 PDS 工具和 TensorFlow-GPU](https://github.com/MongooseOrion/Senses/blob/main/document/Windows_dev.md)
-  * [单片机开发与汇编语言](https://github.com/MongooseOrion/Senses/blob/main/document/assembly_language.md)
+  * [在 Windows 上部署 Linux 子系统、紫光 PDS 工具和 TensorFlow-GPU](https://github.com/MongooseOrion/Senses/tree/main/develop_on_Windows)
+  * [单片机开发与汇编语言](https://github.com/MongooseOrion/Senses/tree/main/MCU_development)
 
 ## 参会总结和感想
   * [微软 2022 年开发者大会：Microsoft Build 2022](https://github.com/MongooseOrion/Senses/blob/main/conference/Build_2022.md)
