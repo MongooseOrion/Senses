@@ -6,10 +6,10 @@
 ## 主要议题
 
   * Copilot 改变所有人的生活方式
+  * 有关 GPT 的最新信息
+  * 负责任地构建和使用 AI 模型
+  * 畅想有 AI 参与的多个领域的未来
   * Windows ARM 取得新进展
-  * GPT 的基本原理
-
-
 
 ## 属于 Copilot AI 的新纪元来临
 
@@ -20,9 +20,10 @@
   3. 利用 Microsoft 365 Copilot 你可以通过简单的问询，在 Word 中生成书面文本，这一切都得益于 Bing 的联网搜索能力；
   4. Bing 现在加入 ChatGPT plus 插件，这意味着 ChatGPT 也将具备联网搜索能力，同时也将来到免费版；
   5. NEW Bing 现在共享 ChatGPT plus 插件；
-  6. Media provenance tools，用于使用有关其来源的元数据标记和签名生成的内容的加密方法，使消费者能够验证图像或视频是否由 AI 生成。
+  6. Media provenance tools，用于使用有关其来源的元数据标记和签名生成的内容的加密方法，使消费者能够验证图像或视频是否由 AI 生成；
+  7. GitHub Copilot X，使用 GPT-4 驱动，支持功能包括：Copilot chat, Copilot pull request 和自动生成代码。其中copilot chat 可以直接根据用户指令读取和优化代码。
 
-
+### Copilot 的一些进展
 
 Microsoft 与 OpenAI 的深度合作，涌现了 ChatGPT 这样的基础模型，以及在这些基础模型上构建的大量应用程序，这些都归功于 Microsoft 使用了端对端的平台来构建应用程序。
 
@@ -55,6 +56,17 @@ Microsoft 与 OpenAI 的深度合作，涌现了 ChatGPT 这样的基础模型�
 <div align='center'><img src='../Picture\ce\屏幕截图 2023-05-24 174446.png' alt='' title='Azure AI API 概览'></div>
 
 <br>利用这些 API，Kevin Scott 提到了他的一个典型应用场景：利用 Whisper model 读取他的播客音频，然后利用 Dolly Model 获取播客中的访问嘉宾姓名，再利用 Bing searching Grounding API 生成关于嘉宾的简短介绍，利用 GPT-4 生成社交网络上介绍这一期播客内容的文章，再利用 DALL-E Model 生成符合文章内容的首图，最后再调用 Linkedin API 发布缩略图和文章内容，实现自动在社交媒体生成播客简要介绍的流程自动化。
+
+### 使用 Azure 开发下一代 AI
+
+ChatGPT Plus 在过去的一段时间内先后发布了多款插件应用，获得了各种能力。现在，由开发者自己构建的 ChatGPT 插件可以直接在 chatgpt 插件商店里自定义部署（只为自己使用）。例如：首先在 github codespace 运行代码，打开 API 端口，复制 URL，粘贴到 chatgpt 的自定义插件位置，就可以实现自定义插件的安装。同时，也可以利用这种方式实现对自己 API 的调试。
+
+全新的 Azure AI studio 允许开发者利用 Azure OpenAI api，直接从 PDF 和 word 文档中获取你的内容，然后定制化你自己的 GPT，这样可以增强 GPT 在特定任务中的回答能力，例如消费者咨询退货政策。Azure AI studio 目前包含数千个 AI 模型，可利用 Azure AI 模型目录非常轻松地使用每个开源模型。
+
+Azure AI Content Safety，可用于测试和评估 AI 部署的安全性。自动检测不良内容，从而更轻松地确保在线社区、应用程序和 AI 系统的安全。最基本的，安全性被直接构建在模型中，以便它识别到有问题的输出时做出适当的响应。
+
+而另外两层是：安全系统和元提示符层，这部分由开发者自定义。
+
 
 ## 有关 GPT 的最新信息
 
@@ -164,17 +176,94 @@ LLaMA 的参数数量大致是 650 亿。但是尽管 LLaMA 只有 65-B 的参�
 
 在上图给出的排名中，前三个都是 RLHF 模型，其余模型都是 SFT 模型。
 
-### 对于 GPT 的开发路径
+### 对于 GPT 的开发路径思考
 
-比较人类和 LLM 之间思考的差异会发现：对于写一篇文章，人类需要去查询数据，然后构思文章结构，也许还需要进行一些计算，在创作时可能会删删减减；但是对于 LLM 来说，创作只是不断地去创造下一个 tokens，去根据概率创作下一个词，它不能思考逻辑关系，然后删删减减文章内容。
+比较人类和 LLM 之间思考的差异会发现：对于写一篇文章，人类需要去查询数据，然后构思文章结构，也许还需要进行一些计算，在创作时可能会删删减减；但是对于 LLM 来说，创作只是不断地去创造下一个 tokens，去根据概率创作下一个词，它不能思考逻辑关系，不能纠正错误，然后删删减减文章内容。
 
-基于此，对于 LLM 来说，需要其运行良好的条件可能是：首先给出几个提示和响应，transformer 会模仿那个模板，从而在该任务上做得更好。此外，你可以通过逐步的思考，引出 Transformer 比较理想的响应，就像是循循善诱。
+基于此，对于 LLM 来说，需要其运行良好的条件可能是：首先给出几个提示和响应，transformer 会模仿那个模板或预设条件，从而在该任务上做得更好。此外，你可以通过逐步的思考，引出 Transformer 比较理想的响应，就像是循循善诱。例如给出 prompt：假设你的 IQ 有 120、假设你是这个领域的专家...
 
 <div align='center'><img src='../Picture\ce\屏幕截图 2023-05-25 221230.png' alt='' title='imsys对目前的模型排名结果' height=''></div><br>
 
+另外一个现象是，LLMs 实际上经常能发现对于某个任务并没有很好地完成。例如在下图中，要求 GPT-4 生成一首不押韵的诗，但实际上它生成的是押韵的诗，但如果你继续问它你完成任务了吗？它是很清楚并没有完成任务的。
+
+<div align='center'><img src='../Picture\ce\屏幕截图 2023-05-26 130220.png' alt='' title='' height=''></div><br>
+
+但是另一方面，如果没有你去提醒它，它就不会注意到这一点，因此你必须在提示中告诉它，让它检查。
+
+### 对于 LLMs 的新的开发或调试方式
+
+在默认情况下，LLMs 并不知道例如计算器、代码生成器这样的角色，因此需要引入插件。
+
+在之前，例如 GPT-3，只能读取它自身的记忆，然而在例如 Bing 的检索工具上存储着大量的信息。对于 Transformer 而言，它的上下文窗口就是工作内存，假设将与任务有关的所有数据加载到工作内存，这是可行的，且模型将更加地有效。
+
+<div align='center'><img src='../Picture\ce\屏幕截图 2023-05-26 131331.png' alt='' title='' height=''></div><br>
+
+通过将这些插件接入大模型当中，你可以索引它们所有的数据。在开发时，你可以获取相关文档，分割成块，用向量标识，在测试时对这些向量进行某种查询，获得与任务相关的块，并将其填充到 prompt 中。
+
+<div align='center'><img src='../Picture\ce\屏幕截图 2023-05-26 132627.png' alt='' title='微调的最新做法和流程' height=''></div><br>
+
+下图是一些优化模型的建议，其中第一部分是实现最佳性能，第二部分是按顺序优化性能。
+
+<div align='center'><img src='../Picture\ce\屏幕截图 2023-05-26 132955.png' alt='' title='' height=''></div><br>
+
+下图是一些 LLMs 使用可能出现的情况：
+
+<div align='center'><img src='../Picture\ce\屏幕截图 2023-05-26 133710.png' alt='' title='' height=''></div><br>
 
 
+## 利用 AI 为开发人员助力未来
+
+### 负责任地构建和使用 AI 模型
+
+构建 AI 模型的首要准则是：确保 AI 系统公平、包容、可靠、安全（safety）、安全（security）和透明。开发者需要对他们的开发和使用方式负责。
+
+如何控制人工智能的社会影响以及减轻使用 AI 技术而导致的后果非常重要，我们应该认识到，构建更加负责任的 AI 的技术手段正在不断发展，这其中即有创新，也有我们从错误中吸取的教训。随着 AI 在商业领域和公共部门的使用不断扩大，我们必须继续促进企业、政府、非政府组织（NGO）、学术研究人员以及所有其他感兴趣的个人和组织之间的公开对话，以促进负责任地使用 AI，以及为社会做好应对其影响的准备。
+
+<div align='center'><img src='../Picture\ce\屏幕截图 2023-05-29 190330.png' alt='' title='构建负责任的 AI 时的一些目标或者衡量标准' height=''></div><br>
+
+在构建 AI 时，首先是需要确定可能存在的危害是什么，以及面临的风险是什么。例如在开放 GPT-4 时，微软召集了各类的专家，研究这项技术的核心挑战是什么，然后在模型或者平台中构建保护措施。
+
+其次是需要测试用户可以让系统工作在正常设定之外（越狱）的可能性。测试是构建任何生成式 AI 的重要步骤，它使得抽象的 “风险概念” 得以以直观的概率出现在开发者面前。
+
+等你了解了风险情况，你就应该着手改进这些可能的越狱漏洞。
+
+构建安全系统时，分为以下几个层级：
+
+<div align='center'><img src='../Picture\ce\屏幕截图 2023-05-29 193004.png' alt='' title='混合层' height=''></div><br>
+
+第一层，在模型上，采用基于人类反馈的强化学习（RLHF）技术，训练模型在查看敏感或者有害的信息时做出适当的反应。
+
+第二层是安全系统，当模型出错时，安全系统可以捕获它们，Azure 内容安全系统使你能够检测、识别有害内容，并实时采取行动。该系统拥有更强的上下文理解能力，而不仅仅是在关键字上工作。
+
+<div align='center'><img src='../Picture\ce\屏幕截图 2023-05-29 194114.png' alt='' title='混合层' height=''></div><br>
+
+其支持图像和文字的过滤，涵盖 4 类内容，而音频和视频支持也即将到来。
+
+### 元宇宙与 AI
+
+
+
+## Windows on ARM 的最新信息
+
+### 利用 ARM 本地运行 AI
+
+<div align='center'><img src='../Picture\ce\屏幕截图 2023-05-26 172219.png' alt='' title='骁龙 AI 堆栈结构' height=''></div><br>
+
+骁龙处理器广泛应用于移动设备中，这意味着若要使用骁龙处理器部署 AI，你可以在云、边缘甚至是汽车中使用相同的堆栈运行任何兼容的内容。
+
+<div align='center'><img src='../Picture\ce\屏幕截图 2023-05-26 175419.png' alt='' title='在 Windows 上利用骁龙处理器部署生成式 AI' height=''></div><br>
+
+### WSA 的最新消息
+
+在过去的一年里，WSA 进行了大量改进，以提高运行时启动性能、图形以及深度 Windows 集成。现在，Microsoft 已经在 WSA 上提供了对Android 13 的支持，以及画中画和对应用程序链接的支持。
+
+同时，WSA 也在持续改进以支持文件共享、本地网络访问，还有更好地与 Android Studio 和 Visual Studio 集成。
+
+同时，Amazon 即将发布一个针对键盘、触控笔和鼠标的无缝映射 API，以将这些操作映射到游戏中的操作。
 
 ## 相关文章
 
   1. 如需获取 Kevin Scott 关于他实现流程自动化的代码，请点击[此处](github.com/microsoft/PodcastCopilot)。
+  2. 如需获取 Azure OpenAI 插件示例开发代码，请点击[此处](https://aka.ms/PluginRepo)。
+  3. 有关构建负责任的 AI 模型的更多内容，请[点此](https://learn.microsoft.com/en-us/training/modules/responsible-ai-principles/1-introduction)访问。
+  4. 对于 WSA 的反馈渠道，请[点此](https://github.com/microsoft/WSA)了解。

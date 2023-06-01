@@ -5,7 +5,7 @@
 
 ## 本页内容
 
-  * 使用 Windows 本地运行 Linux 负载和 Android 应用程序
-  * 部署紫光同创 FPGA 开发工具链
-  * 在 Windows 配置 TensorFlow-GPU 版本
+  * [使用 Windows 本地运行 Linux 负载和 Android 应用程序](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/WSL.md)
+  * [部署紫光同创 FPGA 开发工具链](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/Pango_FPGA.md)
+  * [在 Windows 配置 TensorFlow-GPU 版本](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/TF_GPU_Windows.md)
 

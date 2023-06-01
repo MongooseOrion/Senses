@@ -4,5 +4,5 @@
 
 ## 本页内容
 
-  * 汇编指令
-  * FreeRTOS 在硬件上部署
+  * [汇编指令](https://github.com/MongooseOrion/Senses/blob/main/MCU_development/assembly_language.md)
+  * [FreeRTOS 在硬件上部署](https://github.com/MongooseOrion/Senses/blob/main/MCU_development/FreeRTOS.md)
