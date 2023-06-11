@@ -12,7 +12,7 @@
   
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
-  * [深度学习项目实例](https://github.com/MongooseOrion/Senses/blob/main/document/deep_learning.md)
+  * [深度学习项目实例](https://github.com/MongooseOrion/deep_learn)
   * [将 yolov3 模型参数适配为 TensorFlow-GPU 2.7 运行](https://github.com/MongooseOrion/tf2-keras-yolo3)
   
 ## 利用开源框架的数字信号处理应用实例
