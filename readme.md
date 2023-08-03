@@ -7,12 +7,12 @@
   * [硬件描述语言 Verilog 学习备忘录](https://github.com/MongooseOrion/MyVerilogLearning)
   * [基于 FPGA 的超声波测距系统设计](https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA)
   * [基于 FPGA 的车牌识别系统设计](https://github.com/MongooseOrion/LPR-based-on-Cortex-M3-in-FPGA)
-  * [在紫光 FPGA 环境下移植开源项目]()
+  * [在紫光 FPGA 环境下移植开源项目](https://github.com/MongooseOrion/Senses/blob/main/document/remake_for_pango.md)
   * [基于 FPGA 的目标识别系统设计](https://github.com/MongooseOrion/FPGA-Image-Recognition)
   
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
-  * [人工智能项目实例](https://github.com/MongooseOrion/Senses/blob/main/document/deep_learning.md)
+  * [深度学习项目实例](https://github.com/MongooseOrion/deep_learn)
   * [将 yolov3 模型参数适配为 TensorFlow-GPU 2.7 运行](https://github.com/MongooseOrion/tf2-keras-yolo3)
   
 ## 利用开源框架的数字信号处理应用实例
