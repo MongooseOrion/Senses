@@ -5,10 +5,10 @@
 ## 重新编写的 IP 核
 
 由于紫光缺少 IP 核，可能需要手动编写 RTL 代码，目前包括下述内容：
-  * [AHB Lite 转 AXI4 Lite 桥]()
-  * [IOBUF]()
-  * [逻辑上拉 PULLUP]()
+  * [AHB Lite 转 AXI4 Lite 桥](https://github.com/MongooseOrion/MyVerilogLearning/blob/master/system/ahb_to_axi_bridge.v)
+  * [IOBUF](https://github.com/MongooseOrion/MyVerilogLearning/blob/master/logic_primitive/IOBUF.v)
+  * [逻辑上拉 PULLUP](https://github.com/MongooseOrion/MyVerilogLearning/blob/master/logic_primitive/PULLUP.v)
 
 ## 无剑 100 开源 RISC-V SoC
 
-这是一个由阿里平头哥开发的 RISC-V 处理器。[点此]()访问。
+这是一个由阿里平头哥开发的 RISC-V 处理器。[点此](https://github.com/MongooseOrion/wujian100_open)访问。
