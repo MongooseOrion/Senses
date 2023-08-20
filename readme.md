@@ -8,7 +8,7 @@
   * [基于 FPGA 的超声波测距系统设计](https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA)
   * [基于 FPGA 的车牌识别系统设计](https://github.com/MongooseOrion/LPR-based-on-Cortex-M3-in-FPGA)
   * [在紫光 FPGA 环境下移植开源项目](https://github.com/MongooseOrion/Senses/blob/main/document/remake_for_pango.md)
-  * [利用开源 RISC-V 执行基于 TensorFlow Lite 的目标识别](https://github.com/MongooseOrion/FPGA-Image-Recognition)
+  * [基于 FPGA 的目标识别系统设计](https://github.com/MongooseOrion/FPGA-Image-Recognition)
   
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
