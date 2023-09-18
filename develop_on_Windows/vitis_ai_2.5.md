@@ -22,6 +22,7 @@
   * 拉取 Vitis-AI 仓库
   * 安装 Vitis-AI Docker 镜像
   * 部署适用于 KV260 的交叉编译工具链
+  * 运行深度学习项目示例
 
 ## 配置 Docker Desktop
 
@@ -126,9 +127,13 @@ export ALL_PROXY="http://<DNS IP>:<proxy port>"
 
 <div align='center'><img src='../Picture\vit\屏幕截图 2023-09-03 183820.png' height='250'></div>
 
-如果没有问题，你应该可以在 Docker Desktop for Windows 中看到正在运行的 Vitis-AI 容器。
+如果没有问题，你应该可以在 Docker Desktop for Windows 应用中看到正在运行的 Vitis-AI 容器。
 
 在使用统一脚本部署 Vitis-AI-CPU 时，已经自动下载了包含开发需要使用包的 conda 虚拟环境，你可以使用命令 `conda activate vitis-ai-tensorflow2` 激活该虚拟环境。
+
+如需退出虚拟环境，可键入 `conda deactivate`，如需退出容器，可键入 `exit`。如需关闭容器，可键入 `docker stop <CONTAINER_ID>`。
+
+## 运行深度学习项目示例
 
 
 
