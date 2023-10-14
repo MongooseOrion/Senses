@@ -40,7 +40,7 @@ Docker 允许多用户访问同一映像，如果需要，你可以通过 `sudo 
 ```
 >> sudo usermod -aG docker <USER>
 ```
-然后你需要重启 Docker，可使用下述命令：
+然后你需要重启 Docker，可使用下述命令中的任意一个：
 ```
 >> sudo snap restart docker /
 >> sudo service docker restart /
@@ -135,11 +135,10 @@ export ALL_PROXY="http://<DNS IP>:<proxy port>"
 
 ## 运行深度学习项目示例
 
-
+你可以通过使用 `jupyter` 来运行示例文件。
 
 ## 相关文档
 
   1. 如需了解使用 VS Code 在远程容器中开发，请[点此](https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-containers)访问；
   2. 如需了解如何在每个 WSL 发行版中安装和配置 Git，请[点此](https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-git)访问；
   3. 如需了解在 WSL 和 Windows 之间的跨文件操作，请[点此](https://learn.microsoft.com/zh-cn/windows/wsl/filesystems)访问；
-  4. 
