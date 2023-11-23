@@ -6,7 +6,7 @@
 ## 硬件描述语言和 FPGA 系统设计
   * [硬件描述语言 Verilog 学习备忘录](https://github.com/MongooseOrion/MyVerilogLearning)
   * [基于 FPGA 的超声波测距系统设计](https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA)
-  * [基于 FPGA 的车牌识别系统设计](https://github.com/MongooseOrion/LPR-based-on-Cortex-M3-in-FPGA)
+  * [基于 FPGA 的车牌识别系统设计](https://github.com/MongooseOrion/FPGA-License-Plate-Recognition)
   * [在紫光 FPGA 环境下移植开源项目](https://github.com/MongooseOrion/Senses/blob/main/document/remake_for_pango.md)
   * [基于 FPGA 的目标识别系统设计](https://github.com/MongooseOrion/FPGA-Image-Recognition)
   * [基于 FPGA 的多路视频拼接显示系统](https://github.com/MongooseOrion/Multi-channel-video-splicing)
@@ -18,10 +18,11 @@
   
 ## 利用开源框架的数字信号处理应用实例
   * [滤波器的设计（前序）](https://github.com/MongooseOrion/Senses/blob/main/document/LPF_RC.md)
-  * [使用逻辑实现快速傅里叶变换算法](https://github.com/MongooseOrion/fft_net)
+  * [使用逻辑实现快速傅里叶变换算法](https://github.com/MongooseOrion/mmWave_design/tree/main/plugin_fft)
 
 ## 基于行业软件的编程或联调
   * [MATLAB 学习备忘录](https://github.com/MongooseOrion/Senses/blob/main/document/matlab_func.md)
+  * [利用毫米波雷达实现目标和动作检测](https://github.com/MongooseOrion/mmWave_design/)
 
 ## 外围必需技能的笔记
   * [使用 Markdown 语法写作的学习备忘录](https://github.com/MongooseOrion/Senses/blob/main/document/markdown_notes.md)
