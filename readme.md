@@ -10,6 +10,7 @@
   * [在紫光 FPGA 环境下移植开源项目](https://github.com/MongooseOrion/Senses/blob/main/document/remake_for_pango.md)
   * [基于 FPGA 的目标识别系统设计](https://github.com/MongooseOrion/FPGA-Image-Recognition)
   * [基于 FPGA 的多路视频拼接显示系统](https://github.com/MongooseOrion/Multi-channel-video-splicing)
+  * [基于 FPGA 的声音处理系统](https://github.com/MongooseOrion/FPGA_Audio_Noise_Gate)
   
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
