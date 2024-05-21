@@ -1,7 +1,7 @@
 # 汇总清单
 严格来说，从本科跨越到学术生活，我更多的是对来自未来不确定性挑战的恐惧。大家总是说幸运总是会不期而遇，我的 2022 年的确充满了幸运。我不知道未来会是怎样的，也不知道我能否保持幸运下去，唯一确定的事情是：唯有更多的实力傍身，才能更好地迎接来自未来的挑战。在此处将汇总我的所有内容。
 
-*如果你发现某些内容无法打开，别担心，这只是我还没有决定公开这个仓库或内容。你可以持续关注我，以便第一时间接收到我的动向。*
+*如果你发现某些内容无法打开，别担心，这只是该仓库或内容暂未公开。你可以持续关注我，以便第一时间接收到我的动向。*
 
 ## 硬件描述语言和 FPGA 系统设计
   * [硬件描述语言 Verilog 学习备忘录](https://github.com/MongooseOrion/MyVerilogLearning)
@@ -11,11 +11,14 @@
   * [基于 FPGA 的目标识别系统设计](https://github.com/MongooseOrion/FPGA-Image-Recognition)
   * [基于 FPGA 的多路视频拼接显示系统](https://github.com/MongooseOrion/Multi-channel-video-splicing)
   * [基于 FPGA 的声音处理系统](https://github.com/MongooseOrion/FPGA_Audio_Noise_Gate)
+  * [基于 FPGA 的以太网音频传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/audio_ethernet_trans)
+  * [基于 FPGA 的以太网视频（OV5640 单目）传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/image_capture)
   
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
   * [深度学习项目实例](https://github.com/MongooseOrion/deep_learn)
   * [将 yolov3 模型参数适配为 TensorFlow-GPU 2.7 运行](https://github.com/MongooseOrion/tf2-keras-yolo3)
+  * [使用 Tensorflow2 的音频分类模型](https://github.com/MongooseOrion/Audio-Classification)
   
 ## 利用开源框架的数字信号处理应用实例
   * [滤波器的设计（前序）](https://github.com/MongooseOrion/Senses/blob/main/document/LPF_RC.md)
