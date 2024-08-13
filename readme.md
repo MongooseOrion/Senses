@@ -4,7 +4,6 @@
 *如果你发现某些内容无法打开，别担心，这只是该仓库或内容暂未公开。你可以持续关注我，以便第一时间接收到我的动向。*
 
 ## 硬件描述语言和 FPGA 系统设计
-  * [硬件描述语言 Verilog 学习备忘录](https://github.com/MongooseOrion/MyVerilogLearning)
   * [基于 FPGA 的超声波测距系统设计](https://github.com/MongooseOrion/UltraSonic-Design_based-on-FPGA)
   * [基于 FPGA 的车牌识别系统设计](https://github.com/MongooseOrion/FPGA-License-Plate-Recognition)
   * [在紫光 FPGA 环境下移植开源项目](https://github.com/MongooseOrion/Senses/blob/main/document/remake_for_pango.md)
@@ -12,7 +11,8 @@
   * [基于 FPGA 的多路视频拼接显示系统](https://github.com/MongooseOrion/Multi-channel-video-splicing)
   * [基于 FPGA 的声音处理系统](https://github.com/MongooseOrion/FPGA_Audio_Noise_Gate)
   * [基于 FPGA 的以太网音频传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/audio_ethernet_trans)
-  * [基于 FPGA 的以太网视频（OV5640 单目）传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/image_capture)
+  * [基于 FPGA 的以太网视频（OV5640 单目）传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/cam_ethernet_trans)
+  * [基于 FPGA 的以太网视频（OV5640 双目）传输系统](https://github.com/MongooseOrion/mmWave_design/tree/main/FPGA/dual_image_capture)
   
 ## 编程语言 Python 及机器学习
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
