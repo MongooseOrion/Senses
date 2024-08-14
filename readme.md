@@ -16,7 +16,7 @@
   * [基于 FPGA 的声音处理系统](https://github.com/MongooseOrion/FPGA_Audio_Noise_Gate)
   * [基于 FPGA 的以太网音频传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/audio_ethernet_trans)
   * [基于 FPGA 的以太网视频（OV5640 单目）传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/cam_ethernet_trans)
-  * [基于 FPGA 的以太网视频（OV5640 双目）传输系统](https://github.com/MongooseOrion/mmWave_design/tree/main/FPGA/dual_image_capture)
+  * [基于 FPGA 的以太网视频（OV5640 双目）传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/dual_image_capture)
   
 ## 编程语言 Python 及机器学习
 
