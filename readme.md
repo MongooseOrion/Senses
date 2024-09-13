@@ -22,6 +22,7 @@
 
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
   * [深度学习项目实例](https://github.com/MongooseOrion/deep_learn)
+  * [在 Linux 环境部署 Vitis-AI 交叉编译工具链](https://github.com/MongooseOrion/Senses/tree/main/develop_on_Windows#本页内容)
   * [将 yolov3 模型参数适配为 TensorFlow-GPU 2.7 运行](https://github.com/MongooseOrion/tf2-keras-yolo3)
   * [使用 Tensorflow2 的音频分类模型](https://github.com/MongooseOrion/Audio-Classification)
   

@@ -8,4 +8,6 @@
   * [使用 Windows 本地运行 Linux 负载和 Android 应用程序](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/WSL.md)
   * [部署紫光同创 FPGA 开发工具链](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/Pango_FPGA.md)
   * [在 Windows 配置 TensorFlow-GPU 版本](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/TF_GPU_Windows.md)
-
+  * [使用 WSL 部署 Vitis-AI 早期版本](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/wsl_vitis_ai_2.5.md)
+  * [使用 WSL 部署 Vitis-AI 更新版本](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/wsl_vitis_ai.md)
+  * [使用 Ubuntu 部署适用于 Kria KV260 的 Vitis-AI](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/ubuntu_kv260.md)
