@@ -16,12 +16,13 @@
   * [基于 FPGA 的声音处理系统](https://github.com/MongooseOrion/FPGA_Audio_Noise_Gate)
   * [基于 FPGA 的以太网音频传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/audio_ethernet_trans)
   * [基于 FPGA 的以太网视频（OV5640 单目）传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/cam_ethernet_trans)
-  * [基于 FPGA 的以太网视频（OV5640 双目）传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/dual_image_capture)
+  * [基于 FPGA 的以太网视频（OV5640 双目 Half-Speed）传输系统](https://github.com/MongooseOrion/FPGA_atoms/tree/master/system_project/dual_image_capture)
   
 ## 编程语言 Python 及机器学习
 
   * [Python 语言学习备忘录](https://github.com/MongooseOrion/MyPythonLearning)
   * [深度学习项目实例](https://github.com/MongooseOrion/deep_learn)
+  * [在 Linux 环境部署 Vitis-AI 交叉编译工具链](https://github.com/MongooseOrion/Senses/tree/main/develop_on_Windows#本页内容)
   * [将 yolov3 模型参数适配为 TensorFlow-GPU 2.7 运行](https://github.com/MongooseOrion/tf2-keras-yolo3)
   * [使用 Tensorflow2 的音频分类模型](https://github.com/MongooseOrion/Audio-Classification)
   
