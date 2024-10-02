@@ -25,15 +25,13 @@
   * [在 Linux 环境部署 Vitis-AI 交叉编译工具链](https://github.com/MongooseOrion/Senses/tree/main/develop_on_Windows#本页内容)
   * [将 yolov3 模型参数适配为 TensorFlow-GPU 2.7 运行](https://github.com/MongooseOrion/tf2-keras-yolo3)
   * [使用 Tensorflow2 的音频分类模型](https://github.com/MongooseOrion/Audio-Classification)
+  * [在华为昇腾计算平台部署和运行模型](https://github.com/MongooseOrion/Senses/blob/main/document/ascend_310B4_cann.md)
   
 ## 利用开源框架的数字信号处理应用实例
 
   * [模拟滤波器设计概述](https://github.com/MongooseOrion/Senses/blob/main/document/LPF_RC.md)
   * [使用 FPGA 实现 FIR/IIR 数字滤波器介绍](https://github.com/MongooseOrion/FPGA_atoms/blob/master/document/filter_process.md)
   * [使用矢量量化算法实现人声声纹识别](https://github.com/MongooseOrion/FPGA_Audio_Noise_Gate/tree/main/Software/vqlbg)
-
-## 基于行业软件的编程或联调
-
   * [MATLAB 学习备忘录](https://github.com/MongooseOrion/Senses/blob/main/document/matlab_func.md)
   * [利用毫米波雷达实现目标和动作检测](https://github.com/MongooseOrion/mmWave_design/)
 
