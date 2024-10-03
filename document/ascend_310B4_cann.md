@@ -262,7 +262,7 @@ apt-get install -y gcc g++ make cmake zlib1g zlib1g-dev openssl libsqlite3-dev l
 
 你可以[点此](https://www.hiascend.com/zh/developer/download/community/result?module=cann)下载 CANN-toolkit 的**最新版本**。
 
-如果你使用的是 [WSL](https://learn.microsoft.com/zh-cn/windows/wsl/install)，则你可以使用下述命令将下载的 CANN-toolkit `run` 文件上传至开发板：
+如果你使用的是 [WSL](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/WSL.md#%E9%85%8D%E7%BD%AE-wsl2)，则你可以使用下述命令将下载的 CANN-toolkit `run` 文件上传至开发板：
 
 ```bash
 scp ./Downloads/{文件名称} HwHiAiUser@{开发板的 IP 地址}:Downloads
@@ -367,7 +367,7 @@ export NPU_HOST_LIB=$DDK_PATH/runtime/lib64/stub
 
 键入 `source ~/.bashrc` 以使环境变量立即生效。
 
-现在，你需要切换到 `ACLLite` 的存储路径下：
+现在，你需要切换到 `ACLLite` 的存储路径下并进行编译：
 
 ```bash
 cd ~/repo/ACLLite
@@ -376,7 +376,7 @@ bash build_so.sh
 
 运行过程中可能需要输入管理员密码，等待完成。
 
-## 尝试运行模型
+## 尝试运行样例模型
 
 请拉取下述位置的仓库：
 
@@ -384,7 +384,7 @@ bash build_so.sh
 https://gitee.com/ascend/EdgeAndRobotics/tree/master/Samples
 ```
 
-如果你的开发板内存只有 8GB 或更小，请将下述环境变量加入到 `.bashrc` 文件中：
+如果你的开发板**内存只有 8GB 或更小**，则必须将下述环境变量加入到 `.bashrc` 文件中：
 
 ```bash
 # atc transfer setting (solving OOM)
@@ -393,6 +393,45 @@ export MAX_COMPILE_CORE_NUMBER=1
 ```
 
 然后，你可以按照仓库中任一模型的 `readme` 文件中的指示运行。
+
+## 运行自定义的 tensorflow 模型 
+
+
+
+## 在主机上使用 VS code 远程连接开发板
+
+如果你不想使用其他主机远程访问开发板，则你可以跳过这个章节。
+
+若要在主机上远程连接开发板，则你可以在 VS code 远程资源管理中新建远程。如果在你输入 `ssh` 远程指令后，提示无法连接远程主机，则可能是当前主机用户对位于 `C:\Users\{登录用户}\.ssh` 的文件夹没有足够的访问权限，你需要将该文件夹对当前主机用户赋予完全控制的权限。
+
+如果无误，VS code 将提示输入密码，然后建立远程连接。
+
+如果你的主机会经常登录开发板，则可以考虑使用 ssh 私钥连接。在 Windows 终端中键入下述命令：
+
+```bat
+ssh-keygen
+```
+
+默认情况下你将在路径 `C:\Users\{登录用户}\.ssh\` 下找到名称为 `id_rsa.pub` 的文件，复制该文件中的私钥文本。然后在开发板的 `~/.ssh` 文件夹中新建名称为 `authorized_keys` 的文件（如果没有），并粘贴前述复制的私钥文本。请注意，必须在结尾处换行。默认情况下，开发板的登录用户也许对该文件夹没有可执行权限，则你可以在开发板的终端中键入下述命令：
+
+```bash
+sudo chmod 600 authorized_keys
+sudo chmod 700 ~/.ssh
+```
+
+同时，请确保开发板的 ssh 密钥登录功能已经打开：
+
+```bash
+sudo vim /etc/ssh/sshd_config
+```
+
+检查 `PubkeyAuthentication yes` 项未被注释，若发生改动，你需重启 ssh 功能：
+
+```bash
+systemctl restart sshd.service 
+```
+
+如果无误，你在主机上重新远程连接开发板时，将不需要再使用密码登录。
 
 ## 相关文档
 

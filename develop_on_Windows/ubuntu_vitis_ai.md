@@ -10,16 +10,14 @@
   * 处理器核心：4 核，每个核心线程数为 1
   * Vitis-AI 版本 2.5
 
-如果你希望使用[适用于 Linux 的 Windows 子系统](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/WSL.md)（WSL）来构建 Vitis-AI 运行环境，请[点此](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/vitis_ai_2.5.md)访问。
-
-提供的镜像密码：`deeplearn`。
+如果你希望使用[适用于 Linux 的 Windows 子系统](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/WSL.md)（WSL）来构建 Vitis-AI 运行环境，请[点此](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/wsl_vitis_ai.md)访问。
 
 ## 本页内容
 
   * 拉取 Vitis-AI 仓库
   * 安装 Docker Container
   * 安装 Anaconda
-  * 配置适用于 KV260 的 Vitis-AI Docker 环境
+  * 配置 Vitis-AI Docker 环境
 
 *注意：首次运行终端时，建议通过如下命令更新所有系统依赖。*
 ```bash
@@ -63,7 +61,7 @@
 
 ### 拉取仓库
 
-Vitis-AI 的 GitHub 仓库位置在 `https://github.com/Xilinx/Vitis-AI`，你可以直接拉取最新版，也可以拉取早期版本。你可以查看仓库分支选择合适的版本，**此文档适用于 2.5 或更早版本**。使用下述命令以拉取该分支：
+Vitis-AI 的 GitHub 仓库位置在 `https://github.com/Xilinx/Vitis-AI`，你可以直接拉取最新版，也可以拉取早期版本。你可以查看仓库分支选择合适的版本，**此文档使用 2.5 版本**。使用下述命令以拉取该分支：
 
 ```bash
 >> git clone -b 2.5 https://github.com/Xilinx/Vitis-AI
@@ -250,13 +248,14 @@ For more examples and ideas, visit:
 ## 安装 Vitis-AI-CPU Docker 镜像
 
 你需要首先切换到 Vitis-AI 本地仓库，你可以输入该命令：
+
 ```bash
 >> cd Vitis-AI
 >> docker pull xilinx/vitis-ai-cpu:latest
 ```
 *注意：这可能需要一些时间。*
 
-## 部署适用于 KV260 的交叉编译工具链
+## 部署交叉编译工具链
 
 这里将使用 VART 边缘平台部署交叉编译环境。
 ```bash
@@ -279,13 +278,14 @@ For more examples and ideas, visit:
 ```
 
 **注意：如果你想要重新生成 `resnet50` 文件以测试编译功能，则你需要重新执行下述命令：**
+
 ```bash
 >> source ~/petalinux_sdk_2022.1/environment-setup-cortexa72-cortexa53-xilinx-linux
 ```
 
 ## 运行深度学习项目示例
 
-### 搭建深度神经网络工作环境
+### 搭建工作环境
 
 使用下述命令启动适用于 Vitis-AI 的 Docker：
 ```bash
@@ -297,4 +297,4 @@ For more examples and ideas, visit:
 
 ### 运行深度学习项目示例
 
-课程文件中提供的的示例代码可以直接通过 `jupyter` 运行，如果你使用预置的镜像，则需要激活名为 `tensorflow` 的 conda 虚拟环境，然后打开 jupyter，并执行课程提供的 `.ipynb` 文件。
+现在，你可以[点此](https://github.com/MongooseOrion/Senses/blob/main/develop_on_Windows/run_kv260.md)来了解在 KV260 板上开发的内容。

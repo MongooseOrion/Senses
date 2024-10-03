@@ -1,5 +1,6 @@
 # 使用 Windows 本地运行 Linux 负载和 Android 应用程序
-在本章，将介绍如何使用 [Windows 终端](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-hk&gl=hk)配置 Python 环境和运行[适用于 Linux 的 Windows 子系统（WSL2）](https://learn.microsoft.com/zh-cn/windows/wsl/about)。
+
+本文将介绍如何使用 [Windows 终端](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-hk&gl=hk)配置 Python 环境、运行[适用于 Linux 的 Windows 子系统（WSL2）](https://learn.microsoft.com/zh-cn/windows/wsl/about)和适用于 Android 的 Windows 子系统（已被弃用）。
 
 ## 先决条件
 
