@@ -396,7 +396,69 @@ export MAX_COMPILE_CORE_NUMBER=1
 
 ## 运行自定义的 tensorflow 模型 
 
+截至到 CANN toolkit 版本 8.0.RC3.alpha003，CANN 中用于转换模型的命令 `ATC` 仍不能转换 TensorFlow2 的 `.h5` 模型。因此，如果你有一个 tf2 的模型文件，你需要先将其转换为 `.onnx` 模型，然后再在开发板上使用 `ATC` 命令转换为 `.om` 模型。
 
+你可以[点此](https://github.com/MongooseOrion/deep_learn/blob/master/tensorflow_learn/tf_to_onnx.py)获取一个用于将 tf2 模型转换为 onnx 模型的 Python 脚本，在运行前请确保依赖包版本为：
+
+```python
+tf2onnx==1.16.1
+onnx==1.16.1
+onnxruntime==1.19.2
+```
+
+你可以通过 [Netron](https://netron.app/) 来查看模型的结构是否存在下述情况：
+
+  1. 具有多于 1 种算子类型，例如 `(ai.onnx v15, ai.onnx.ml v2)`，在这种情况下，你应该删除后者；
+  2. 原来的模型输入形状不是定值，例如 `(None, 28, 28)`，在这种情况下，你应该在转换时重新声明输入形状为 `(1, 28, 28)`。
+
+如果无误，你可以在开发板种通过下述命令将 onnx 模型转换为 `.om` 模型：
+
+```bash
+atc --model={文件名称}.onnx --framework=5 -output={文件名称} --soc_version=Ascend310B4
+```
+
+输出为：
+
+```bash
+ATC start working now, please wait for a moment.
+option model=$model.onnx
+option framework=5
+option output=$model
+option soc_version=Ascend310B4
+......
+ATC run success, welcome to the next use.
+```
+
+你可以通过 [msame](https://gitee.com/ascend/tools/tree/master/msame) 方法来快速调用转换后的 `.om` 模型进行推理，请拉取或下载该存储库，然后切换到 `./msame` 目录，执行下述命令：
+
+```bash
+./build.sh g++ ./out
+```
+
+如果报警告，你可以忽略，只要在路径 `./out/` 下可以看到生成了一个名为 `main` 的文件即可。
+
+此方法支持以全 0 作为输入，你可以快速验证转换的模型是否无误：
+
+```bash
+cd ./out
+./main --model '{模型路径}' --output './out/' --outfmt TXT --loop 1
+```
+
+你将可以在 `./out/` 路径下看到一个新生成的文本文件，其中显示了模型的输出。
+
+若要输入指定的单个数据，请键入：
+
+```bash
+./main --model "{模型路径}" --input "{模型输入文件路径}" --output "./out/" --outfmt TXT --loop 1
+```
+
+若要使用模型对某一目录的所有文件都进行推理，请键入：
+
+```bash
+./main --model "{模型路径}" --input "/{文件路径}/data" --output "./out/" --outfmt TXT
+```
+
+其他支持的功能请自行阅读该存储库的自述文件。
 
 ## 在主机上使用 VS code 远程连接开发板
 
