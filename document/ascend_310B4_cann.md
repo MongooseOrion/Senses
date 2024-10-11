@@ -299,7 +299,7 @@ chmod +x {文件名称}.run
 ./{文件名称}.run --install-path=/home/HwHiAiUser/Ascend/
 ```
 
-如果你是在 root 用户下安装的，请参阅[安装 CANN 套件包官方文档](#相关文档)。
+如果你是在 root 用户下安装的，请参阅[相关文档 1](#相关文档)。
 
 然后你需要将相关的路径全部加入环境变量中，请运行下述命令：
 
@@ -311,7 +311,7 @@ vim ~/.bashrc
 
 ```bash
 # config CANN platform
-. /home/HwHiAiUser/Ascend/ascend-toolkit/set_env.sh
+source /home/HwHiAiUser/Ascend/ascend-toolkit/set_env.sh
 ```
 
 然后键入 `source ~/.bashrc` 以使环境变量立即生效。
