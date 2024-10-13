@@ -21,10 +21,14 @@ Cuda 驱动程序下载点击[此处](https://developer.nvidia.com/cuda-toolkit-archive)，
 
 在完成上述操作后，将 Cuda 的安装文件父文件夹添加到 Windows 系统的 `Path` 环境变量。
 
-<BR>如果部署完成，在 [Windows 终端](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-hk&gl=hk)中输入：
+---
+
+如果部署完成，在 [Windows 终端](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-hk&gl=hk)中输入：
+
 ```
 nvcc -V
 ```
+
 应当输出 Cuda 驱动程序版本号。
 
 ## 安装 Anaconda 应用程序
@@ -73,7 +77,7 @@ pip install C:\Users\ [users] \Downloads\tensorflow_gpu-2.6.0-cp39-cp39-manylinu
 
 ### 使用在线安装
 
-你可以使用 `pip install tensorflow-gpu=[version]` 指令在线安装指定版本的 TensorFlow-GPU。
+你可以使用 `pip install tensorflow=[version]` 指令在线安装指定版本的 CPU、GPU 集成版本 TensorFlow。
 
 请注意，下载可能由于网络问题中断，你可以更换 Anaconda 的下载源来确保正确安装。
 
