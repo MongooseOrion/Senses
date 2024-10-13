@@ -1,4 +1,4 @@
-# 在 Ubuntu 下部署适用于 KV260 的深度学习训练环境
+# 在 Ubuntu 下部署 Xilinx Vitis-AI 计算环境
 
 ## 先决条件
 
