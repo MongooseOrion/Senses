@@ -460,6 +460,39 @@ cd ./out
 
 其他支持的功能请自行阅读该存储库的自述文件。
 
+## 使用 pytorch 训练和推理
+
+在某些情况下，你可能需要在开发板本地执行 pytorch 项目的训练和推理，在这种情况下，你除了需要使用 `pip` 安装 `pytorch` 和 `torch_npu` 外，还必须安装 `torchair`。该依赖包不能使用 `pip` 执行安装，必须从源代码构建。
+
+首先。你需要使用 `git` 工具拉取存储库 `https://gitee.com/ascend/torchair.git`，然后执行下述命令：
+
+```bash
+cd ./torchair
+bash ./configure
+```
+
+在运行过程中需要你指定 `pytorch` 的 `site-packages` 安装位置，你可以使用 `pip show torch` 查看，例如 `/usr/local/miniconda3/lib/python3.9`。同时，你还需要指定 CANN 的安装路径。如果是默认安装路径，建议键入：
+
+```bash
+Please specify the location of python with valid torch 2.x site-packages installed. [Default is /usr/local/miniconda3/bin/python3]
+(You can make this quiet by set env [TARGET_PYTHON_PATH]):/usr/local/miniconda3/bin/python3
+
+Specify the location of ascend sdk for debug on localhost or leave empty.
+(You can make this quiet by set env [ASCEND_SDK_PATH]): /home/HwHiAiUser/Ascend/ascend-toolkit/latest/
+Configuration finished
+```
+
+接下来执行以下命令，编译生成 TorchAir 安装包：
+
+```bash
+mkdir build
+cd build
+cmake ..
+make torchair -j8
+```
+
+这可能需要一定的时间，编译完成后，会在 `build/dist/dist/` 目录下生成名为 `torchair-{version}-py3-none-any.whl` 的安装包文件，你可以直接使用 `pip` 安装。
+
 ## 在主机上使用 VS code 远程连接开发板
 
 如果你不想使用其他主机远程访问开发板，则你可以跳过这个章节。
@@ -471,7 +504,7 @@ cd ./out
 如果你的主机会经常登录开发板，则可以考虑使用 ssh 私钥连接。在 Windows 终端中键入下述命令：
 
 ```bat
-ssh-keygen
+ssh-keygen -t rsa
 ```
 
 默认情况下你将在路径 `C:\Users\{登录用户}\.ssh\` 下找到名称为 `id_rsa.pub` 的文件，复制该文件中的私钥文本。然后在开发板的 `~/.ssh` 文件夹中新建名称为 `authorized_keys` 的文件（如果没有），并粘贴前述复制的私钥文本。请注意，必须在结尾处换行。默认情况下，开发板的登录用户也许对该文件夹没有可执行权限，则你可以在开发板的终端中键入下述命令：
